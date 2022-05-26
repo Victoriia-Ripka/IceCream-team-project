@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Victoriia-Ripka.github.io/project-demo",
+  "homepage": "https://Victoriia-Ripka.github.io/IceCream-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /project-demo/"
+    "build": "parcel build src/*.html --public-url /IceCream-team-project/"
   },
   "repository": {
     "type": "git",
