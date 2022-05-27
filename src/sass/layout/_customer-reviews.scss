@@ -1,27 +1,3 @@
-.section {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-.container {
-  max-width: 480px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  // @include respond-to(tablet) {
-  //   max-width: 768px;
-  //   margin: 0 auto;
-  //   padding-left: 32px;
-  //   padding-right: 32px;
-  // }
-  // @include respond-to(desktop) {
-  //   max-width: 1200px;
-  //   margin: 0 auto;
-  //   padding-left: 16px;
-  //   padding-right: 16px;
-  // }
-}
-
 .swiper {
   width: 100%;
   height: 100%;
