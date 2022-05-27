@@ -2,6 +2,10 @@
     background-color: var(--main-bg);
 }
 
+.container--footer{
+    padding-bottom: 40px;
+}
+
 .footer__main{
     border-bottom: 1px solid #E1E1E1;
 }
@@ -10,7 +14,6 @@
     font-family: 'Titan One';
     font-size: 18px;
     line-height: 1.16;
-    text-align: center;
     text-transform: uppercase;
     color: var(--accent-color);
     text-align: left;
@@ -65,9 +68,11 @@
 }
 
 .social__icon{
-    height: 20px;
-    width: 20px;
     fill: var(--white-text);
+}
+
+.social__icon--tel{
+    margin-right: 2px;
 }
 
 .footer__contact{
@@ -76,8 +81,6 @@
     line-height: 1.86;
     text-align: right;
     color: var(--main-text);
-
-    margin-bottom: 40px;
 }
 
 .footer__tel{
@@ -85,37 +88,20 @@
 }
 
 .footer__extra {
+    display: block;
     font-family: 'DM Sans';
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.52;
     text-align: center;
 
-    height: 78px;
-    width: 140px;
-    margin: 0 auto;
-
     color: var(--second-text);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-content: center;
-
-    @media screen and (min-width: 480px){
-        flex-wrap: nowrap;
-        width: 270px;
-        align-items: center;
-        justify-content: space-between;
-    }
+    padding: 16px 60px 20px 60px;
 }
 
 .footer__author{
-    height: 20px;
-
-    &+&{
-        margin-top: 5px;
-        @media screen and (min-width: 480px){
-            margin-top: 0;
-        }
+    display: block;
+    @media screen and (min-width: 480px){
+        display: inline-block;
     }
 }
