@@ -1,0 +1,74 @@
+<!-- Order FORM -->
+<div data-modal class="backdrop is-hidden">
+    <div class="order-form">
+        <button type="button" data-modal-close class="order-form__close-btn">
+            <svg class="order-form__icon" width="11" height="11">
+                <use href="/images/svg/close.svg"></use>
+            </svg>
+        </button>
+        <p class="order-form__title">PLEASE FILL ORDER FORM</p>
+        <form class="order-form__form">
+            <div class="choise-products">
+                <p class="form-field__label"> Choose your product below</p>
+
+                <label class="check-field"> 
+                    <input type="checkbox" class="check-field__checkbox" name="checkbox">
+                    <span class="check-field__label"></span>
+                    <span class="check-field__text">
+                        ice cream
+                </label>
+                <label class="check-field">
+                    <input type="checkbox" class="check-field__checkbox" name="checkbox">
+                    <span class="check-field__label"></span>
+                    <span class="check-field__text">
+                        ice coffee
+                </label>
+                <label class="check-field">
+                    <input type="checkbox" class="check-field__checkbox" name="checkbox">
+                    <span class="check-field__label"></span>
+                    <span class="check-field__text">
+                        milkshakes
+                </label>
+            </div>
+
+            <div class="form-field form-field__space--F">
+                <label class="form-field__label" for="user-name">Name</label>
+                <div class="form-position">
+                    <input class="form-position__input" type="text" name="user-name" id="user-name" placeholder=""
+                        required />
+                    <svg class="form-position__icon" width="18" height="18">
+                        <use href="/images/svg/user.svg"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-field form-field__space--F">
+                <label class="form-field__label" for="user-tel">Phone</label>
+                <div class="form-position">
+                    <input class="form-position__input" type="tel" name="user-tel" id="user-tel" placeholder=""
+                        required>
+                    <svg class="form-position__icon" width="18" height="18">
+                        <use href="/images/svg/tel-icon.svg"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="form-field form-field__space--F">
+                <label class="form-field__label" for="user-email">e-mail</label>
+                <div class="form-position">
+                    <input class="form-position__input" type="email" name="user-email" id="user-email" placeholder="">
+                    <svg class="form-position__icon" width="18" height="18">
+                        <use href="/images/svg/mail-icon.svg"></use>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="form-field form-field__space--L">
+                <label class="form-field__label" for="comment">Your coments</label>
+                <textarea name="comment" id="comment" placeholder="Enter your text" class="textarea"></textarea>
+            </div>
+            
+            <button type="submit" class="check-field__btn">Order</button>
+        </form>
+
+    </div>
+</div>
+<!-- END OF FORM -->
