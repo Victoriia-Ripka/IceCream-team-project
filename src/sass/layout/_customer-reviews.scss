@@ -1,27 +1,68 @@
-// .swiper {
-// }
-// .mySwiper {
-// }
-// .swiper-wrapper {
-// }
-.swiper-slide {
-  text-align: center;
+.section {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  // @include respond-to(tablet) {
+  //   max-width: 768px;
+  //   margin: 0 auto;
+  //   padding-left: 32px;
+  //   padding-right: 32px;
+  // }
+  // @include respond-to(desktop) {
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  //   padding-left: 16px;
+  //   padding-right: 16px;
+  // }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  width: 12.4px;
+  height: 11.84px;
+  background-color: transparent;
+  border-radius: unset;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('./../images/mobile/testimonials/home1.svg');
+}
+
 .swiper-slide__img {
   margin: 0 auto;
   margin-bottom: 32px;
 }
 .testimonial {
+  margin: 0 auto;
+  width: 280px;
+
   position: relative;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   padding: 0 50px;
   padding-top: 43px;
   padding-bottom: 17px;
   background-color: #fafafa;
-
-  outline: 1px solid red;
 }
-.testimonial::after {
+.testimonial::before {
   content: '';
   position: absolute;
   top: 30px;
@@ -33,10 +74,11 @@
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .testimonial::after {
+  .testimonial::before {
     background-image: url('./../images/mobile/testimonials/112x.png');
   }
 }
+
 .textimonial__wrapper {
   padding-left: 15px;
   padding-right: 8px;
@@ -46,7 +88,7 @@
 .testimonial__text {
   position: relative;
 
-  font-style: normal;
+  text-align: center;
   font-weight: 500;
   font-size: 12px;
   line-height: 2.55;
@@ -55,12 +97,28 @@
 }
 .testimonial__name {
   position: relative;
-  margin-bottom: 16px;
 
-  font-style: normal;
+  text-align: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
 }
-// .swiper-pagination {
-// }
+
+.testimonial__name::after {
+  content: '';
+
+  position: absolute;
+  top: -16px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 32px;
+  height: 4px;
+  background-image: url('./../images/mobile/testimonials/dots-mark.png');
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .testimonial__name::after {
+    background-image: url('./../images/mobile/testimonials/dots-mark@2x.png');
+  }
+}
