@@ -6,29 +6,14 @@
   background: var(--main-bg);
 }
 
-.advantages .container {
-  width: 100%;
-
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background: #fff5f6;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-}
-
 .advantages-list {
-  margin-bottom: -32px;
+  margin-top: -32px;
 }
 
 .advantages-item {
   display: block;
 
-  margin-bottom: 32px;
+  margin-top: 32px;
 
   &:first-child::before {
     width: 33px;
