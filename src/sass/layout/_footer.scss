@@ -1,20 +1,94 @@
 .footer{
     background-color: var(--main-bg);
-    border-bottom: 1px solid #E1E1E1;
 }
 
 .footer__main{
- 
+    border-bottom: 1px solid #E1E1E1;
 }
 
+.pre-title{
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: left;
 
-.footer__extra{
+    width: 230px;
+    margin-bottom: 16px;
+}
+
+.title{
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--title-text);
+    text-align: left;
+
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.footer__soc{
+    display: flex;
+    margin-bottom: 40px;
+    //text-align: right;
+
+}
+
+.footer_item{
+    height: 32px;
+    width: 32px;
+    background: #FEA5BB;
+    border-radius: 50%;
+
+    &:not(:last-child){
+        margin-right: 28px;
+    }
+}
+
+.footer__link{
+    position: relative;
+}
+
+.social__icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: var(--white-text);
+}
+
+.footer__contact{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.86;
+    text-align: right;
+    color: var(--main-text);
+
+    margin-bottom: 40px;
+}
+
+.footer__tel{
+    color: var(--title-text);
+}
+
+.footer__extra {
     font-family: 'DM Sans';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
-    
+
+    //width: 280px;
+    height: 78px;
+    width: 140px;
+    margin: 0 auto;
+
     color: var(--second-text);
     display: flex;
     flex-direction: row;
