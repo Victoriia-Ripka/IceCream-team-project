@@ -1,0 +1,123 @@
+.contacts{
+    padding-top: 48px;
+    padding-bottom: 48px;
+
+    font-family: 'DM Sans', sans-serif;
+
+    background-image: linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 15%);
+}
+.contacts-list{
+    margin-bottom: 32px;   
+}
+.contacts-item{
+    height: 412px;
+    padding: 40px 32px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    background-color:var(--white-text);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    &:not(:first-child){
+        margin-top: 20px;
+    }
+}
+.contacts-type{
+    display: inline-flex;
+    height: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    text-transform: uppercase;
+
+    color: var(--white-text);
+    border-radius: 4px;
+   
+    &.cafe{
+        width: 80px;
+        background-color: #F0D1A5;
+    }
+    &.foodtruck{
+        width: 130px;
+        background-color: #C2E297;
+    }
+}
+.contacts-title{
+    font-weight: 500;
+    font-size: 12px;
+    line-height:1.86;    
+    letter-spacing: 0.04em;
+    
+    color: var(--main-text);
+
+    margin-bottom: 8px;
+}
+.contacts-text{
+    line-height: 1.5;
+
+    color: var(--second-text);
+}
+.schedule-list{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+}
+.schedule-time{
+    color: var(--accent-color);
+}
+.contacts-link{
+    line-height: 1.5;
+
+    color: var(--second-text);
+    &:visited{
+        color: var(--second-text);
+    }
+    &:hover, &:focus{
+        color: var(--title-text);
+    }
+}
+.contacts-button-list{
+    text-align: center;
+   
+}
+.contacts-button-item{
+    display: block;
+    &+&{
+        margin-top: 10px;
+    }
+}
+.contacts-button{
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    
+   
+    cursor: pointer;
+        
+    border-radius: 22px;
+    border: transparent;
+    min-width: 160px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+ }
+.button-active{
+    background-color: #D41342;
+    color: var(--white-text);
+}
+.button-reverse{
+    background-color:var(--white-text);
+    color: var(--title-text);
+    &:hover, &:focus{
+        background-color: #ECEBEB;
+    }
+}
