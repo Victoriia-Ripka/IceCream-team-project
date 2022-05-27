@@ -1,0 +1,23 @@
+.footer{
+    background-color: var(--main-bg);
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.footer__main{
+ 
+}
+
+
+.footer__extra{
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    
+    color: var(--second-text);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
