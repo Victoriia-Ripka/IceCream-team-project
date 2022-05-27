@@ -1,5 +1,38 @@
 body {
     font-family: 'DM Sans', 'Titan One', sans-serif;
     color: var(--main-text);
+    font-size: 14px;
     font-weight: 400;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.link {
+    text-decoration: none;
+    font-family: inherit;
+    display: inline-block;
+}
+
+.list {
+    list-style: none;
+    padding-inline-start: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
