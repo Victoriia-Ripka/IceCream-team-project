@@ -44,10 +44,11 @@
 }
 
 .navigation {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -95,4 +96,14 @@
   &:hover {
     background-color: var(--hover-bg);
   }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .hero {
+  padding-top: 120px;
 }
