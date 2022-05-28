@@ -7,9 +7,17 @@
     <symbol id="icon-menu" viewBox="0 0 46 32">
       <path stroke-width="2.286" d="M0 2.286h45.714M0 16h45.714M0 29.714h45.714" />
     </symbol>
-    <symbol id="icon-arrow" viewBox="0 0 46 32">
-     <path d="m1.107 1 5.258 4-5.258 4" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-   
+
+    <symbol id="icon-burger" viewBox="0 0 46 32">
+    <path stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+    <path stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+    <path stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+    </symbol>
+
+  <symbol id="icon-arrow" viewBox="0 0 22 32">
+<path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
+</symbol>
+
     <symbol id="icon-facebook" viewBox="0 0 16 32">
       <path d="M14.266 15.97h-4.176v15.39h-6.327v-15.39h-3.009v-5.409h3.009v-3.5c0-2.503 1.182-6.422 6.384-6.422l4.687 0.020v5.25h-3.401c-0.558 0-1.342 0.28-1.342 1.474v3.183h4.729l-0.553 5.403z"></path>
     </symbol>
