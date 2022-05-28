@@ -1,23 +1,19 @@
 .container {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
 
-    @media screen and (min-width: 480px) {
-        width: 480px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        padding-left: 18px;
-        padding-right: 18px;
-        // на таблетці десь паддінги 18, десь 32. тому робимо загальні 18, а де треба додаємо марджинами ще відстань
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 1280px;
-        padding-left: 16px;
-        padding-right: 16px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    padding: 0 18px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0 16px;
+  }
 }
