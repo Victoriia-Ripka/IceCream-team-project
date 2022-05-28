@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: 'DM Sans', 'Titan One', sans-serif;
+  color: var(--main-text);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+  display: inline-block;
+}
+
+.list {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+:root {
+  --main-text: #000000;
+  --second-text: #907e82;
+  --white-text: #ffffff;
+  --title-text: #d41443;
+  --accent-color: #ffa5ba;
+  --main-bg: #fff5f6;
+  --second-bg: #ffb8ca;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.hero {
+  background-color: var(--second-bg);
+  padding-top: 136px;
+  padding-bottom: 307px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-wraper {
+  position: absolute;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.153;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.hero-title-color {
+  color: var(--title-text);
+  font-size: 50px;
+  line-height: 0.88;
+  display: contents;
+}
+
+.hero-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.hero-item:not(:first-child) {
+  margin-left: 8px;
+}
+
+.hero-btn {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: var(--white-text);
+  background-color: var(--title-text);
+  border-radius: 20px;
+  padding: 8px 16px;
+  border: transparent;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.hero-btn:hover {
+  background-color: #C7133E;
+}
+
+.hero-btn-last {
+  background-color: var(--white-text);
+  color: var(--title-text);
+}
+
+.hero-btn-last:hover {
+  background-color: #ECEBEB;
+}
+
+.thumb {
+  position: absolute;
+  top: 9px;
+  left: 98px;
+}
+
+.wraper {
+  position: absolute;
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  left: 42px;
+  top: 24px;
+}
+
+.footer {
+  background-color: var(--main-bg);
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.footer__extra {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: var(--second-text);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

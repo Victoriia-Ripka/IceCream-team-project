@@ -1,0 +1,81 @@
+.hero {
+    background-color: var(--second-bg);
+    padding-top: 136px;
+    padding-bottom: 307px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-wraper {
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: 'Titan One';
+    font-style: normal;
+    color: var(--white-text);
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1.153;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.hero-title-color {
+    color: var(--title-text);
+    font-size: 50px;
+    line-height: 0.88;
+    display: contents;
+}
+
+.hero-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.hero-item:not(:first-child) {
+    margin-left: 8px;
+}
+
+.hero-btn {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--white-text);
+    background-color: var(--title-text);
+    border-radius: 20px;
+    
+    padding: 8px 16px;
+    border: transparent;
+    transition: background-color 250ms;
+    &:hover {
+        background-color: #C7133E;
+    }
+}
+
+.hero-btn-last {
+    background-color: var(--white-text);
+    color: var(--title-text);
+    &:hover {
+        background-color: #ECEBEB;
+    }
+}
+
+.thumb {
+    position: absolute;
+    top: 9px;
+    left: 98px;
+    
+}
+
+.wraper {
+    position: absolute;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    left: 42px;
+    top: 24px;
+}
