@@ -4,8 +4,9 @@
   top: 0;
   position: absolute;
   position: fixed;
-  // background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms, visibility 250ms;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 350ms, visibility 350ms;
+  z-index: 3;
 }
 .modal {
   background-color: #fff;
@@ -19,6 +20,9 @@
   padding: 35px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.1)),
     url(/images/modal-img/background-img-1.png);
+  background-position: center;
+  background-size: inherit;
+
   @media screen and(min-width:480px) {
     width: 450px;
   }
@@ -86,7 +90,7 @@
   font-size: 16px;
 }
 .contact__modal {
-  color: var(--second-text);
+  color: var(--accent-color);
 }
 .contact__modal:hover,
 :focus {
@@ -128,3 +132,8 @@
 //   fill: var(--title-text);
 //   background-color: var(--accent-color);
 // }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
