@@ -4,11 +4,11 @@
   top: 0;
   position: absolute;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
+  // background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms;
 }
 .modal {
-  background-color: var(--main-text);
+  background-color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17,7 +17,8 @@
   min-height: 500px;
   border-radius: 4px;
   padding: 35px;
-
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.1)),
+    url(/images/modal-img/background-img-1.png);
   @media screen and(min-width:480px) {
     width: 450px;
   }
@@ -39,7 +40,10 @@
   align-content: center;
   padding: 10px;
 }
-
+.modal__nav .item:hover,
+:focus {
+  color: var(--title-text);
+}
 .form__text {
   font-family: 'Titan One';
   font-style: normal;
@@ -87,6 +91,7 @@
 .contact__modal:hover,
 :focus {
   color: var(--title-text);
+  background-color: transparent;
 }
 // .icon-close {
 //   fill: #000;
@@ -105,14 +110,21 @@
   right: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
-  background-color: var(--accent-color);
+  &:hover {
+    fill: var(--title-text);
+    background-color: var(--accent-color);
+  }
+  &:focus {
+    fill: var(--title-text);
+    background-color: var(--accent-color);
+  }
 }
-.button__svg:hover,
-:focus {
-  fill: var(--title-text);
-  background-color: var(--main-text);
-}
+// .button__svg:hover,
+// :focus {
+//   fill: var(--title-text);
+//   background-color: var(--accent-color);
+// }
