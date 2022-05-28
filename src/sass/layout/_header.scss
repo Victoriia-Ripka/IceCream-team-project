@@ -20,11 +20,24 @@
 }
 
 .header__logo {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
 
   @media screen and (min-width: 1200px) {
     flex-grow: 0;
   }
+}
+
+.header__logo-text {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-left: 18px;
+  color: var(--title-text);
 }
 
 .header__button {
