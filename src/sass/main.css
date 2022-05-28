@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+body {
+  font-family: "DM Sans", "Titan One", sans-serif;
+  color: var(--main-text);
+  font-weight: 400;
+}
+
+:root {
+  --main-text: #000000;
+  --second-text: #907e82;
+  --white-text: #ffffff;
+  --title-text: #d41443;
+  --accent-color: #ffa5ba;
+  --main-bg: #fff5f6;
+  --second-bg: #ffb8ca;
+  --hover-bg: #ecebeb;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.header {
+  background-color: var(--second-bg);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding-top: 32px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding-top: 37px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+
+.header__logo {
+  flex-grow: 1;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    flex-grow: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    align-items: center;
+    margin-left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav__item {
+  margin-right: 35px;
+}
+.site-nav__item:last-child {
+  margin-right: 0;
+}
+.site-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--white-text);
+}
+.site-nav__link:focus, .site-nav__link:hover {
+  color: var(--title-text);
+}
+.site-nav__link--current {
+  color: var(--title-text);
+}
+
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: var(--white-text);
+  color: var(--title-text);
+  cursor: pointer;
+  border-radius: 22px;
+  border: transparent;
+  min-width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.button:focus, .button:hover {
+  background-color: var(--hover-bg);
+}/*# sourceMappingURL=main.css.map */
