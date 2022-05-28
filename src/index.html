@@ -21,62 +21,21 @@
     />
   </head>
   <body>
- 
-  
- 
-  <div class="modal">
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+    <include src="./partials/header.html"></include>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/order-form.html"></include>
+    <include src="./partials/modal-location.html"></include>
     
-    <form class="modal__form">
-    <h2 class="form__text">Geolocation</h2>
-    <svg class="icon-close" width="20px" height="20px">
-      <use href="./images/svg/sprite.svg#icon-close_40px" ></use>
-    </svg>
-
- <ul class="modal__nav">
-      <li class="item">
-        <a href="https://www.google.com.ua/maps/place/%D0%A7%D0%B8%D0%BA%D0%B0%D0%B3%D0%BE,+%D0%98%D0%BB%D0%BB%D0%B8%D0%BD%D0%BE%D0%B9%D1%81,+%D0%A1%D0%A8%D0%90/@41.880986,-87.8294945,9.7z/data=!4m5!3m4!1s0x880e2c3cd0f4cbed:0xafe0a6ad09c0c000!8m2!3d41.8781136!4d-87.6297982?hl=ru"
-         class="input__text">Chicago</a>        
-      </li>
-      <li class="item">
-        <a href="https://www.google.com.ua/maps/place/%D0%9B%D0%BE%D1%81-%D0%90%D0%BD%D0%B4%D0%B6%D0%B5%D0%BB%D0%B5%D1%81,+%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F,+%D0%A1%D0%A8%D0%90/@34.0201613,-118.6919245,10z/data=!4m13!1m7!3m6!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!2z0JvQvtGBLdCQ0L3QtNC20LXQu9C10YEsINCa0LDQu9C40YTQvtGA0L3QuNGPLCDQodCo0JA!3b1!8m2!3d34.0522342!4d-118.2436849!3m4!1s0x80c2c75ddc27da13:0xe22fdf6f254608f4!8m2!3d34.0522342!4d-118.2436849?hl=ru"
-        class="input__text">Los Angeles</a>
-       
-      </li>
-      <li class="item">
-          <a href="https://www.google.com.ua/maps/place/%D0%9D%D1%8C%D1%8E%D0%B0%D1%80%D0%BA,+%D0%9D%D1%8C%D1%8E-%D0%94%D0%B6%D0%B5%D1%80%D1%81%D0%B8,+%D0%A1%D0%A8%D0%90/@40.7312623,-74.2520956,12z/data=!3m1!4b1!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89c25370329a0e1d:0xe1bcdc2adcfee473!8m2!3d40.7356815!4d-74.1723919?hl=ru" 
-          class="input__text">New York</a>
-       
-      </li>
-      <li class="item">
-         <a href="https://www.google.com.ua/maps/place/%D0%9D%D1%8C%D1%8E-%D0%94%D0%B6%D0%B5%D1%80%D1%81%D0%B8,+%D0%A1%D0%A8%D0%90/@40.55912,-75.9644946,7.22z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89c0fb959e00409f:0x2cd27b07f83f6d8d!8m2!3d39.5501182!4d-74.7399902?hl=ru"
-          class="input__text">New Jersey</a>
-        
-      </li>
-      <li class="item">
-            <a href="https://www.google.com.ua/maps/place/%D0%91%D0%BE%D1%81%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B0%D1%81%D1%81%D0%B0%D1%87%D1%83%D1%81%D0%B5%D1%82%D1%81,+%D0%A1%D0%A8%D0%90/@42.1812224,-71.3022315,8.4z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89e3652d0d3d311b:0x787cbf240162e8a0!8m2!3d42.3600661!4d-71.0588837?hl=ru" 
-            class="input__text">Boston</a>
-         
-      </li>
-      <li class="item">
-              <a href="https://www.google.com.ua/maps/place/%D0%91%D0%BE%D1%81%D1%82%D0%BE%D0%BD,+%D0%9C%D0%B0%D1%81%D1%81%D0%B0%D1%87%D1%83%D1%81%D0%B5%D1%82%D1%81,+%D0%A1%D0%A8%D0%90/@42.1812224,-71.3022315,8.4z/data=!4m13!1m7!3m6!1s0x89c24fa5d33f083b:0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!3b1!8m2!3d40.7127753!4d-74.0059728!3m4!1s0x89e3652d0d3d311b:0x787cbf240162e8a0!8m2!3d42.3600661!4d-71.0588837?hl=ru"
-               class="input__text">Washington</a>
-            
-      </li>
-    </ul> 
-    <ul class="contact">
-      <li class="item">
-        <a href="tel:+61(0)383766284" class="contact__modal">+61(0)383 766 284</a>
-      </li>
-      <li class="item">
-        <a href="mailto:noreply@envato.com" class="contact__modal">noreply@envato.com</a>
-      </li>
-    </ul>
-   
-      </form>
-    
-      
-</div>
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
+ 
   </body>
 </html>
