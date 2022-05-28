@@ -60,6 +60,9 @@
   color: var(--title-text);
 }
 .contact {
+  .item + .item {
+    margin-top: 5px;
+  }
   margin-top: 50px;
   display: flex;
   flex-direction: column;
