@@ -62,7 +62,7 @@
 
 @media screen and(min-width:$mobile) {
   .testimonial {
-    max-width: 280px;
+    min-width: 280px;
   }
 }
 
