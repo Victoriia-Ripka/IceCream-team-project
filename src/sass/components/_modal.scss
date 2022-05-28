@@ -8,7 +8,7 @@
   min-height: 500px;
   border-radius: 4px;
   padding: 35px;
-
+  background-image: linear-gradient(to bottom, black, pink);
   @media screen and(min-width:480px) {
     width: 450px;
   }
@@ -30,6 +30,7 @@
   align-content: center;
   margin: 10px;
 }
+
 .form__text {
   font-family: 'Titan One';
   font-style: normal;
@@ -53,11 +54,11 @@
   font-size: 20px;
   line-height: 1.13;
   letter-spacing: 0.04em;
-  ::before {
-    border-bottom: 3px solid black;
-  }
 }
-
+.input__text:hover,
+:focus {
+  color: var(--title-text);
+}
 .contact {
   margin-top: 50px;
   display: flex;
