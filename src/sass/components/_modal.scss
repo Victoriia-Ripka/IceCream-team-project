@@ -1,0 +1,77 @@
+.modal {
+  background-color: var(--main-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  min-height: 500px;
+  border-radius: 4px;
+  padding: 35px;
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+}
+.modal__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -10px;
+}
+.modal__nav .item {
+  display: flex;
+  align-content: center;
+  margin: 10px;
+}
+.form__text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+
+.input__text {
+  color: var(--accent-color);
+  top: -38px;
+  left: 10px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  ::before {
+    border-bottom: 3px solid black;
+  }
+}
+.planet {
+  fill: green;
+  margin-left: 20px;
+}
+.contact {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__modal {
+  color: var(--second-text);
+}
+.icon-close {
+  fill: #000;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
