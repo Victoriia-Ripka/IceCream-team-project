@@ -6,14 +6,11 @@
   background: var(--main-bg);
 }
 
-.advantages-list {
-  margin-top: -32px;
-}
-
 .advantages-item {
   display: block;
-
-  margin-top: 32px;
+  & + & {
+    margin-top: 32px;
+  }
 
   &:first-child::before {
     width: 33px;
@@ -44,6 +41,18 @@
       background-image: url(/images/mobile/advantages/icon3@2x.png);
     }
   }
+}
+
+.number {
+  font-size: 2em;
+  padding: 0 0 25px;
+  font-weight: bold;
+  opacity: 0;
+}
+
+.viz {
+  opacity: 1;
+  transition: 1s;
 }
 
 .advantages-item::before {
@@ -78,3 +87,11 @@
 
   color: var(--main-text);
 }
+
+.advantages-title-kg::after {
+  content: 'kg';
+  width: 20px;
+  height: 20px;
+}
+
+////////////////////////////////////////////////////////////
