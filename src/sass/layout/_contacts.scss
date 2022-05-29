@@ -1,6 +1,4 @@
 .contacts{ 
-    font-family: 'DM Sans', sans-serif;
-
     background-image: linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
 
     padding-top: 48px;
@@ -13,6 +11,17 @@
     @media screen and (min-width: $desktop){
         padding-top: 120px;
         padding-bottom: 120px;
+
+        background-image:url('/images/desktop/contacts/contacts-bg.webp'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 50%;
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: url('/images/desktop/contacts/contacts-bg-2x.webp'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+            }
     }
 }
 .contacts-list{
@@ -51,13 +60,11 @@
     @media screen and (min-width: $tablet){
         flex-basis: calc(100% / 3 - 32px);    
         margin-left: 32px;
-        max-width: 395px;
         font-size: 14px;
     }
 
      @media screen and (min-width: $desktop){
-        flex-basis: calc(100% / 3 - 40px);
-        padding: 40px 40px;
+             padding: 40px 40px;
 
         font-size: 16px;
 
