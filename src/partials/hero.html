@@ -3,12 +3,22 @@
         <div class="hero-wraper">
             <h1 class="hero-title">ice cream<br>made with<span class="hero-title-color"><br>passion</span></h1>
             <ul class="hero-list">
-                <li class="hero-item"><button type="button" class="hero-btn">Products</button></li>
-                <li class="hero-item"><button type="button" class="hero-btn hero-btn-last">How it’s made?</button></li>
+                <li class="hero-item"><a href="#products"><button type="button" class="hero-btn">Products</button></a></li>
+                <li class="hero-item"><a href="#about"><button type="button" class="hero-btn hero-btn-last">How it’s made?</button></a></li>
             </ul>
         </div>
+        <ul class="hero-list-time">
+            <li class="hero-item-time">
+                <p class="hero-text-time">16</p>
+                <p class="hero-text">cafes</p>
+            </li>
+            <li class="hero-item-time">
+                <p class="hero-text-time">23</p>
+                <p class="hero-text">food trucks</p>
+            </li>
+        </ul>
         <div class="wraper">
-            <div class="thumb">
+            <div class="hero-thumb">
                 <picture>
                     <source 
                     srcset="/images/desktop/hero/hero.png 1x,
@@ -29,6 +39,42 @@
                     alt="Ражок с мороженым">
                 </picture>
             </div>
+        </div>
+        <div class="hero-thumb-milk">
+            <picture>
+                <source 
+                srcset="/images/desktop/hero/milk.png 1x,
+                    /images/desktop/hero/milk2x.png 2x"
+                        media="(min-width:1280px)"
+                >
+                <source
+                srcset="/images/tablet/hero/milk.png 1x,
+                    /images/tablet/hero/milk2x.png 2x"
+                        media="(min-width:768px)"
+                >
+                <img src="/images/desktop/hero/milk.png"
+                alt="Кувшин с молоком">
+            </picture>
+            <p class="hero-text-milc">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et
+            </p>
+        </div>
+        <div class="hero-thumb-girl">
+            <picture>
+                <source 
+                srcset="/images/desktop/hero/girl.png 1x,
+                    /images/desktop/hero/girl2x.png 2x"
+                        media="(min-width:1280px)"
+                >
+                <source
+                srcset="/images/tablet/hero/girl.png 1x,
+                    /images/tablet/hero/girl2x.png 2x"
+                        media="(min-width:768px)"
+                >
+                <img src="/images/desktop/hero/girl.png"
+                alt="Девушка с мороженым">
+            </picture>
         </div>
     </div>
 </section>
