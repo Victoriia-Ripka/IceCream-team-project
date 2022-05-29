@@ -131,6 +131,10 @@
   }
 }
 
+.advantages-weight::after {
+  content: 'kg';
+}
+
 .advantages-text {
   font-family: 'DM Sans';
   font-style: normal;
@@ -154,3 +158,11 @@
 }
 
 ////////////////////////////////////////////////////////////
+// .number {
+//   opacity: 0;
+// }
+
+// .viz {
+//   opacity: 1;
+//   transition: 1s;
+// }
