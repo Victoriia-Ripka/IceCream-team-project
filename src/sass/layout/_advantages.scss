@@ -1,13 +1,34 @@
-.section {
-  padding-top: 40px;
+.section-advantages {
   padding-bottom: 80px;
-  padding-right: 70px;
 
   background: var(--main-bg);
 }
 
+.advantages-box {
+  // padding-right: 70px;
+
+  @media screen and (min-width: $tablet) {
+    padding-right: 189px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-right: 103;
+  }
+}
+
+.advantages-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .advantages-item {
   display: block;
+  width: 230px;
+
   & + & {
     margin-top: 32px;
   }
@@ -39,6 +60,21 @@
     background-image: url(/images/mobile/advantages/icon3.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/mobile/advantages/icon3@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 3 - 30px);
+    & + & {
+      margin-left: 22px;
+      margin-top: 0;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 3 - 30px);
+    & + & {
+      margin-left: 142px;
     }
   }
 }
