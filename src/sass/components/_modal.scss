@@ -1,0 +1,285 @@
+.backdrop {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 350ms, visibility 350ms;
+  z-index: 3;
+}
+.modal {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  min-height: 580px;
+  border-radius: 4px;
+  padding: 35px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+    url(/images/modal-img/background-img-1.png);
+  background-position: center;
+  background-size: inherit;
+
+  @media screen and(min-width:480px) {
+    width: 450px;
+  }
+}
+.modal__form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: -10px;
+}
+.modal__nav .item {
+  display: flex;
+  align-content: center;
+  padding: 10px;
+}
+.modal__nav .item:hover,
+:focus {
+  color: var(--title-text);
+}
+.form__text {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 20px;
+}
+.form__title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.13;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.input__text {
+  color: var(--accent-color);
+  top: -38px;
+  left: 10px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+}
+.input__text:hover,
+:focus {
+  color: var(--title-text);
+}
+.contact {
+  .item + .item {
+    margin-top: 5px;
+  }
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact__modal {
+  color: var(--accent-color);
+}
+.contact__modal:hover,
+:focus {
+  color: var(--title-text);
+  background-color: transparent;
+}
+// .icon-close {
+//   fill: #000;
+//   background-color: var(--accent-color);
+//   border-radius: 50%;
+//   position: absolute;
+//   top: -30px;
+//   right: -10px;
+// }
+.button__svg {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    fill: var(--title-text);
+    background-color: var(--accent-color);
+  }
+  &:focus {
+    fill: var(--title-text);
+    background-color: var(--accent-color);
+  }
+}
+// .button__svg:hover,
+// :focus {
+//   fill: var(--title-text);
+//   background-color: var(--accent-color);
+// }
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.form {
+  position: relative;
+  margin-bottom: 10px;
+}
+.form__name {
+  display: block;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--second-bg);
+}
+.form__input {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: var(--white-text);
+  position: relative;
+  cursor: pointer;
+  padding-left: 38px;
+  margin-top: 4px;
+}
+// .form__input:hover,
+// :focus {
+//   border-color: var(--title-text);
+// }
+.form__input:hover {
+  border-color: var(--title-text);
+}
+.form__input:focus {
+  border-color: var(--title-text);
+  outline: transparent;
+}
+.form__input:hover + .input__svg {
+  fill: var(--title-text);
+}
+.form__input:focus + .input__svg {
+  fill: var(--title-text);
+}
+.callback {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+.input__svg {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.modal-coment {
+  display: block;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: var(--white-text);
+  cursor: pointer;
+  margin-top: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  resize: none;
+}
+.modal-coment:hover,
+:focus {
+  border-color: var(--title-text);
+  outline: transparent;
+}
+.agreement {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agreement::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: block;
+}
+// .check {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+.form-check:checked + .agreement::before {
+  background-color: #2196f3;
+  background-image: url(/images/svg/check.svg);
+  background-position: center;
+  background-size: contain;
+  border: transparent;
+  fill: #fff;
+}
+.form__button {
+  width: 200px;
+  height: 50px;
+  border-color: transparent;
+  border-radius: 4px;
+  background-color: var(--main-text);
+  color: var(--accent-color);
+  cursor: pointer;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  display: block;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 1.13;
+  letter-spacing: 0.04em;
+}
