@@ -3,6 +3,13 @@
     position: relative;
 }
 
+.about__section {
+    @media screen and (min-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 80px;
+    }
+}
+
 
 
 .about__main {
@@ -180,3 +187,43 @@
     }
 }
 
+.is-hidden {
+    display: none;
+}
+
+
+.readmore {
+    background-color: transparent;
+    position: relative;
+    top: -44px;
+    left: 0;
+    margin-bottom: -44px;
+    z-index: 5;
+    @media screen and (min-width: 768px) {
+        margin-top: -15px;
+    }
+}
+
+.readmore__text {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        color: var(--second-text);
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 1.76;
+            }
+}
+
+.about__icon--rote {
+    transform: rotate(-90deg);
+}
+
+.button-hidden {
+    background-color: var(--main-bg);
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    z-index: -5;
+}
