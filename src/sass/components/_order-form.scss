@@ -51,12 +51,12 @@
         .order-form {
         max-width: 550px;
         max-height: 700px;
-        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/order-form/order-form-bg1280-mob-X1.jpg");
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/desktop/order-form/order-form-bg1280-desk-X1.jpg");
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/mobile/order-form/order-form-bg1280-mob-X2.jpg');
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('/images/desktop/order-form/order-form-bg1280-desk-X2.jpg');
         
             }
     }
@@ -82,35 +82,24 @@
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
+    
 
-    // background-image: url("/images/svg/close.svg");
-    //     background-size: cover;
-    //     background-origin: border-box;
-    //     background-color: transparent;
-    //     border: 1px solid var(--second-bg);
-    //     box-sizing: border-box;
-    //     border-radius: 50%;
-    //     cursor: pointer;
+    &:hover,
+    &:focus {
+        background-color: var(--second-bg);
+        border: 1px solid var(--title-text);
+        transition-duration: 300ms;
+        transition-property: stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     
-    //     &:hover {
-    //         background-image: url("/images/svg/close-hover.svg");
-    //         transition-duration: 250ms;
-    //         transition-property: background-image;
-    //         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    //     }
-    
-    
+        }
 }
 
-.order-form__close-btn:hover,
-.order-form__close-btn:focus {
-    fill: var(--title-text);
-    transition-duration: 250ms;
-    transition-property: fill;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.order-form__icon{
+        stroke: var(--title-text);
+        
+        
 }
-
-
 
 .order-form__title {
     font-family: 'Titan One';
@@ -137,9 +126,6 @@
     margin-bottom: 12px;
 }
 
-// .order-form-field__space--L {
-//     margin-bottom: 20px;
-// }
 
 .order-form-field__label {
     display: block;
