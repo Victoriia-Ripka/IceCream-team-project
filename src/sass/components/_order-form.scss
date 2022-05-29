@@ -45,8 +45,8 @@
 }
 
 
-@media screen and (min-width: 1280px) {
-    .order-form {
+        @media screen and (min-width: 1280px) {
+        .order-form {
         max-width: 550px;
         max-height: 700px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/order-form/order-form-bg1280-mob-X1.jpg");
@@ -65,8 +65,12 @@
     margin-right: auto;
 }
 
+
 .order-form__close-btn {
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     top: 8px;
     right: 8px;
     height: 30px;
@@ -76,6 +80,22 @@
     box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
+
+    // background-image: url("/images/svg/close.svg");
+    //     background-size: cover;
+    //     background-origin: border-box;
+    //     background-color: transparent;
+    //     border: 1px solid var(--second-bg);
+    //     box-sizing: border-box;
+    //     border-radius: 50%;
+    //     cursor: pointer;
+    
+    //     &:hover {
+    //         background-image: url("/images/svg/close-hover.svg");
+    //         transition-duration: 250ms;
+    //         transition-property: background-image;
+    //         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    //     }
     
     
 }
@@ -87,11 +107,6 @@
     transition-property: fill;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-// .order-form__icon{
-//     width: 16px;
-//     height: 16px;
-// fill: red;
-// }
 
 
 
