@@ -1,12 +1,10 @@
 .section-advantages {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 
   background: var(--main-bg);
 }
 
 .advantages-box {
-  // padding-right: 70px;
-
   @media screen and (min-width: $tablet) {
     padding-right: 189px;
   }
