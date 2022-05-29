@@ -102,6 +102,7 @@
   line-height: 1.31;
   background-color: var(--white-text);
   color: var(--title-text);
+  stroke: var(--title-text);
   cursor: pointer;
   border-radius: 22px;
   border: transparent;
@@ -119,7 +120,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
 }
 
 .sticky + .hero {

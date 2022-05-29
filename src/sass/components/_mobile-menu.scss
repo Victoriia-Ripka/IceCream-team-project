@@ -6,6 +6,13 @@
   border: none;
   cursor: pointer;
   margin-left: auto;
+  stroke: var(--title-text);
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    stroke: var(--white-text);
+  }
 
   @media screen and (min-width: 1280px) {
     display: none;
@@ -14,6 +21,13 @@
 .menu-close-button {
   margin-bottom: 14px;
   margin-right: 20px;
+  stroke: var(--white-text);
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    stroke: var(--title-text);
+  }
 }
 
 .mobile-menu {
@@ -25,7 +39,16 @@
   height: 100vh;
   padding-top: 20px;
   padding-bottom: 20px;
-  z-index: 5;
+  z-index: 7;
+
+  overflow: scroll;
+
+  transition: 0.5s;
+
+  @media screen and (max-width: 768px) {
+    width: 100vw;
+    right: -768px;
+  }
 
   //   &.is-open {
   //     opacity: 1;
@@ -38,6 +61,7 @@
 
   @media screen and (min-width: 768px) {
     width: 254px;
+    right: -254px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -45,9 +69,14 @@
   }
 }
 
+.mobile-menu.active {
+  right: 0;
+}
+
 .mobile-menu__container {
   @media screen and (min-width: 480px) {
     width: 480px;
+    margin: 0 auto;
   }
 
   @media screen and (min-width: 768px) {
@@ -93,7 +122,7 @@
   margin-top: 20px;
   display: flex;
   flex-direction: column;
-
+  margin: 0 auto;
   border-top: solid 1px var(--mob-menu-decoration);
 }
 
@@ -128,13 +157,3 @@
 // .menu-open-button.is-active .menu-open-button__icon {
 //   opacity: 0;
 // }
-
-.menu-close-button {
-  stroke: var(--white-text);
-  padding: 10px;
-
-  &:hover,
-  &:focus {
-    stroke: var(--title-text);
-  }
-}
