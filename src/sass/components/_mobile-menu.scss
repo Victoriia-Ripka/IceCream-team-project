@@ -1,1 +1,140 @@
+.menu-open-button,
+.menu-close-button {
+  display: block;
 
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+.menu-close-button {
+  margin-bottom: 14px;
+  margin-right: 20px;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--mob-menu-bg);
+  width: 100vw;
+  height: 100vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  z-index: 5;
+
+  //   &.is-open {
+  //     opacity: 1;
+  //     transform: translateX(0);
+  //   }
+
+  //   opacity: 0;
+  //   transform: translateX(100%);
+  //   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile-menu__container {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 254px;
+  }
+}
+
+.mobile-menu__button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  background-color: var(--white-text);
+  color: var(--title-text);
+  stroke: var(--title-text);
+  cursor: pointer;
+  border-radius: 22px;
+  border: transparent;
+  width: 209px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 48px;
+  padding-left: 48px;
+
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:focus,
+  &:hover {
+    background-color: var(--hover-bg);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 186px;
+    padding-right: 44px;
+    padding-left: 44px;
+  }
+}
+
+.mobile-menu__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  border-top: solid 1px var(--mob-menu-decoration);
+}
+
+.mobile-menu__link {
+  font-weight: 700;
+  line-height: 1.28;
+  color: var(--white-text);
+  padding: 12px 20px;
+  display: flex;
+  border-bottom: solid var(--mob-menu-decoration);
+  border-width: 1px;
+  &:hover,
+  &:focus {
+    color: var(--title-text);
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+// .menu-open-button__icon {
+//   opacity: 1;
+//   transition: opacity 400ms ease;
+// }
+// .menu-open-button.is-active .menu-open-button__icon {
+//   opacity: 0;
+// }
+
+.menu-close-button {
+  stroke: var(--white-text);
+  padding: 10px;
+
+  &:hover,
+  &:focus {
+    stroke: var(--title-text);
+  }
+}
