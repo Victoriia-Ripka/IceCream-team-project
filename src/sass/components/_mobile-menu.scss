@@ -22,7 +22,6 @@
   margin-bottom: 14px;
   margin-right: 20px;
   stroke: var(--white-text);
-  padding: 10px;
 
   &:hover,
   &:focus {
@@ -49,15 +48,6 @@
     width: 100vw;
     right: -768px;
   }
-
-  //   &.is-open {
-  //     opacity: 1;
-  //     transform: translateX(0);
-  //   }
-
-  //   opacity: 0;
-  //   transform: translateX(100%);
-  //   transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
 
   @media screen and (min-width: 768px) {
     width: 254px;
@@ -149,11 +139,3 @@
 .no-scroll {
   overflow: hidden;
 }
-
-// .menu-open-button__icon {
-//   opacity: 1;
-//   transition: opacity 400ms ease;
-// }
-// .menu-open-button.is-active .menu-open-button__icon {
-//   opacity: 0;
-// }
