@@ -1,0 +1,209 @@
+.section__customers {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 32px;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #d9d9d9;
+  opacity: 1;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-pagination-bullet-active {
+  width: 12.4px;
+  height: 11.84px;
+  background-color: transparent;
+  border-radius: unset;
+
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('/images/mobile/testimonials/home1.svg');
+  transform: scale(1.2);
+}
+
+.swiper-slide__img {
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+@media screen and(min-width:768px) {
+  .swiper-slide__img {
+    margin-bottom: 20px;
+  }
+}
+@media screen and(min-width:1280px) {
+  .swiper-slide__img {
+    margin-bottom: 16px;
+  }
+}
+
+.testimonial {
+  margin: 0 auto;
+  margin-bottom: 36px;
+  padding: 0 50px;
+  padding-top: 43px;
+  padding-bottom: 21px;
+
+  max-width: 100%;
+
+  position: relative;
+  background-color: #fafafa;
+}
+
+@media screen and(min-width:$mobile) {
+  .testimonial {
+    min-width: 280px;
+  }
+}
+
+@media screen and(min-width:$tablet) {
+  .testimonial {
+    max-width: 620px;
+
+    padding: 0 6px;
+    padding-top: 37px;
+    padding-bottom: 36px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and(min-width:$desktop) {
+  .testimonial {
+    max-width: 1034px;
+    padding: 0 106px;
+    padding-top: 47px;
+    padding-bottom: 31px;
+    margin-bottom: 36px;
+  }
+}
+
+.testimonial::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 53px;
+
+  width: 54px;
+  height: 40px;
+
+  background-size: contain;
+  background-image: url('/images/mobile/testimonials/11.png');
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .testimonial::before {
+    background-image: url('/images/mobile/testimonials/112x.png');
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .testimonial::before {
+    top: 20px;
+    left: 6px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .testimonial::before {
+    top: 32px;
+    left: 105px;
+  }
+}
+
+.testimonial__wrapper {
+  padding-left: 15px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  background: repeating-linear-gradient(#fafafa, #fafafa 30px, #e1e1e1 30px, #e1e1e1 31px);
+}
+@media screen and (min-width: $tablet) {
+  .testimonial__wrapper {
+    padding-left: 45px;
+    padding-right: 49px;
+  }
+}
+@media screen and (min-width: $desktop) {
+  .testimonial__wrapper {
+    padding-left: 36px;
+    padding-right: 35px;
+    padding-bottom: 8px;
+  }
+}
+.testimonial__text {
+  position: relative;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.55;
+
+  z-index: 10;
+}
+@media screen and(min-width:$tablet) {
+  .testimonial__text {
+    font-size: 14px;
+    line-height: 2.16;
+  }
+}
+@media screen and(min-width:$desktop) {
+  .testimonial__text {
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+  }
+}
+
+.testimonial__name {
+  position: relative;
+
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+}
+@media screen and(min-width:$tablet) {
+  .testimonial__name {
+    font-size: 16px;
+    line-height: 1.86;
+  }
+}
+@media screen and(min-width:$desktop) {
+  .testimonial__name {
+    font-size: 20px;
+    line-height: 1.86;
+  }
+}
+
+.testimonial__name::after {
+  content: '';
+
+  position: absolute;
+  top: -16px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 32px;
+  height: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url('/images/mobile/testimonials/dots-mark.png');
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .testimonial__name::after {
+    background-image: url('/images/mobile/testimonials/dots-mark@2x.png');
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
+}
