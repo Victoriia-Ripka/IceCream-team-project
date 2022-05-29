@@ -1,4 +1,4 @@
-<section class="about about__section">
+<section class="about section">
   <div class="about__main container">
     <p class="about__text">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
@@ -9,39 +9,34 @@
       />
       <img src="./images/mobile/about/cow.png" alt="cow" class="about__img" />
     </picture>
-    <ul class="about__list">
-      <li class="about__item">
-        <p class="about__item-text">
-          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-        </p>
-      </li>
-      <li class="about__item">
-        <p class="about__item-text about__item-text--pink">
-          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-          maximus. Cras massa nibh, <br />
-          tincidunt.
-        </p>
-      </li>
-      <li class="about__item">
-        <p class="about__item-text about__item-text--pink">
-          Aliquam erat volutpat. Aenean accumsan.
-        </p>
-      </li>
-    </ul>
-    <button type="button" class="about__btn">
-      Read more
-      <svg class="about__icon" width="10" height="10">
-        <use href="./images/svg/sprite.svg#icon-vector"></use>
-      </svg>
-    </button>
-    <picture>
-      <source
-        srcset="./images/mobile/about/milk.png 1x, ./images/mobile/about/milk2x.png 2x"
-        media="(min-width: 320px)"
-      />
-      <img src="./images/mobile/about/milk.png" alt="cow" class="about__milk" />
-    </picture>
+    <div class="about__wrap">
+      <ul class="about__list">
+        <li class="about__item">
+          <p class="about__item-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+        </li>
+        <li class="about__item">
+          <p class="about__item-text about__item-text--pink">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus
+            orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+            urna maximus. Cras massa nibh, <br class="about__enter" />
+            tincidunt.
+          </p>
+        </li>
+        <li class="about__item">
+          <p class="about__item-text about__item-text--pink">
+            Aliquam erat volutpat. Aenean accumsan.
+          </p>
+        </li>
+      </ul>
+      <button type="button" class="about__btn">
+        Read more
+        <svg class="about__icon" width="10" height="10">
+          <use href="./images/svg/sprite.svg#icon-vector"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </section>
