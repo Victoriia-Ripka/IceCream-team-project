@@ -36,6 +36,7 @@
     font-size: 12px;
     line-height: 1.86;
     letter-spacing: 0.04em;
+    
 
     background-color:var(--white-text);
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -50,14 +51,17 @@
     @media screen and (min-width: $tablet){
         flex-basis: calc(100% / 3 - 32px);    
         margin-left: 32px;
-
+        max-width: 395px;
         font-size: 14px;
     }
 
      @media screen and (min-width: $desktop){
+        flex-basis: calc(100% / 3 - 40px);
         padding: 40px 40px;
 
         font-size: 16px;
+
+        
      }     
 }
 .contacts-type{
@@ -195,7 +199,7 @@
             }
     }   
 
-.contacts-button{
+.contacts-button{    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
@@ -208,11 +212,23 @@
     padding-top: 10px;
     padding-bottom: 10px;
  }
+.button-icon{
+   margin-left: 8px;
+
+    @media screen and (min-width: $tablet){
+        margin-left: 13px;
+    }
+}
 .button-active{
     background-color: #D41342;
     color: var(--white-text);
+   
     padding-left: 17px;
     padding-right: 17px;
+
+    .button-icon {
+            stroke: var(--white-text);
+                }
 
     @media screen and (min-width: $tablet){
         padding-left: 32px;
@@ -226,8 +242,13 @@
 .button-reverse{
     background-color:var(--white-text);
     color: var(--title-text);
+
     padding-left: 32px;
     padding-right: 32px;
+
+    .button-icon {
+            stroke: var(--title-text);
+        }
     &:hover, &:focus{
         background-color: #ECEBEB;
     }
