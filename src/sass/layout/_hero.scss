@@ -9,6 +9,9 @@
 .hero-wraper {
     position: absolute;
     z-index: 2;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 
 .hero-title {
@@ -65,8 +68,11 @@
 
 .thumb {
     position: absolute;
-    top: 9px;
-    left: 98px;
+    // top: 9px;
+    // left: 98px;
+    top: 61%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .wraper {
@@ -75,9 +81,9 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--accent-color);
-    left: 42px;
-    top: 24px;
-    @media screen and (min-width:768px) {
-        
-    }
+    // left: 42px;
+    // top: 24px;
+    top: 45%;
+    left: 64%;
+    transform: translate(-50%, -50%);
 }
