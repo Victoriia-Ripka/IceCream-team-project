@@ -16,7 +16,7 @@
         <li class="site-nav__item">
           <a href="#home" class="site-nav__link site-nav__link--current"> Home</a>
         </li>
-        <li class="site-nav__item"><a href="/#products" class="site-nav__link">Our products</a></li>
+        <li class="site-nav__item"><a href="#products" class="site-nav__link">Our products</a></li>
         <li class="site-nav__item">
           <a href="#how-it-is-made" class="site-nav__link">How it’s made?</a>
         </li>
@@ -26,11 +26,11 @@
     </nav>
 
     <button class="menu-open-button" id="toggle" type="button">
-      <svg class="" width="20px" height="12px" id="toggle">
+      <svg class="" id="toggle2" width="20px" height="12px">
         <use
           class="menu-open-button__icon"
+          id="toggle3"
           href="./images/svg/sprite.svg#icon-burger"
-          id="toggle"
         ></use>
       </svg>
     </button>
@@ -42,7 +42,7 @@
             <use class="menu-close-button__icon" href="./images/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <button class="mobile-menu__button">
+        <button class="mobile-menu__button" data-modal-open_mob>
           Buy now
           <svg class="" width="20px" height="12px">
             <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>
@@ -68,7 +68,7 @@
         </ul>
       </div>
     </div>
-    <button class="button header__button" id="headerbutton" data-modal-open>
+    <button class="button header__button" id="headerbutton" data-modal-open_desk>
       Buy now
       <svg class="" width="20px" height="12px">
         <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>

@@ -1,34 +1,59 @@
-<section class="hero" id="home">
+<section class="hero">
   <div class="container">
     <div class="hero-wraper">
-      <h1 class="hero-title">
-        ice cream<br />made with<span class="hero-title-color"><br />passion</span>
-      </h1>
+      <h1 class="hero-title">ice cream<br>made with<span class="hero-title-color"><br>passion</span></h1>
       <ul class="hero-list">
-        <li class="hero-item"><button type="button" class="hero-btn">Products</button></li>
-        <li class="hero-item">
-          <button type="button" class="hero-btn hero-btn-last">How it’s made?</button>
-        </li>
+        <li class="hero-item"><button onclick="window.location.href = '#products'" type="button"
+            class="hero-btn">Products</button></li>
+        <li class="hero-item"><button onclick="window.location.href = '#about'" type="button"
+            class="hero-btn hero-btn-last">How it’s made?</button></li>
       </ul>
     </div>
+    <ul class="hero-list-time">
+      <li class="hero-item-time">
+        <p class="hero-text-time">16<span class="number"></span></p>
+        <p class="hero-text">cafes</p>
+      </li>
+      <li class="hero-item-time">
+        <p class="hero-text-time">23<span class="number"></span></p>
+        <p class="hero-text">food trucks</p>
+      </li>
+    </ul>
     <div class="wraper">
-      <div class="thumb">
+      <div class="hero-thumb">
         <picture>
-          <source
-            srcset="/images/desktop/hero/hero.png 1x, /images/desktop/hero/hero2x.png 2x"
-            media="(min-width:1280px)"
-          />
-          <source
-            srcset="/images/tablet/hero/hero.png 1x, /images/tablet/hero/tablet-hero2x.png 2x"
-            media="(min-width:768px)"
-          />
-          <source
-            srcset="/images/mobile/hero/hero.png 1x, /images/mobile/hero/hero2x.png 2x"
-            media="(min-width:320px)"
-          />
-          <img src="/images/desktop/hero/hero.png" alt="Ражок с мороженым" />
+          <source srcset="/images/desktop/hero/hero.png 1x,
+                        /images/desktop/hero/hero2x.png 2x" media="(min-width:1280px)">
+          <source srcset="/images/tablet/hero/hero.png 1x,
+                        /images/tablet/hero/tablet-hero2x.png 2x" media="(min-width:768px)">
+          <source srcset="/images/mobile/hero/hero.png 1x,
+                        /images/mobile/hero/hero2x.png 2x" media="(min-width:320px)">
+          <img src="/images/desktop/hero/hero.png" alt="Ice cream cone">
         </picture>
       </div>
+    </div>
+    <div class="hero-thumb-milk">
+      <picture>
+        <source srcset="/images/desktop/hero/milk.png 1x,
+                    /images/desktop/hero/milk2x.png 2x" media="(min-width:1280px)">
+        <source srcset="/images/tablet/hero/milk.png 1x,
+                    /images/tablet/hero/milk2x.png 2x" media="(min-width:768px)">
+        <img src="/images/desktop/hero/milk.png" alt="Jug of milk">
+      </picture>
+      <p class="hero-text-milc">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <button class="hero-btn-milk" type="button"></button>
+    </div>
+    <div class="hero-thumb-girl">
+      <picture>
+        <source srcset="/images/desktop/hero/girl.png 1x,
+                    /images/desktop/hero/girl2x.png 2x" media="(min-width:1280px)">
+        <source srcset="/images/tablet/hero/girl.png 1x,
+                    /images/tablet/hero/girl2x.png 2x" media="(min-width:768px)">
+        <img src="/images/desktop/hero/girl.png" alt="Girl with ice cream">
+      </picture>
     </div>
   </div>
 </section>
