@@ -8,7 +8,7 @@
   margin-left: auto;
   stroke: var(--title-text);
   padding: 10px;
-
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     stroke: var(--white-text);
@@ -22,7 +22,7 @@
   margin-bottom: 14px;
   margin-right: 20px;
   stroke: var(--white-text);
-
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     stroke: var(--title-text);
@@ -95,6 +95,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus,
   &:hover {
@@ -124,6 +125,7 @@
   display: flex;
   border-bottom: solid var(--mob-menu-decoration);
   border-width: 1px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--title-text);
