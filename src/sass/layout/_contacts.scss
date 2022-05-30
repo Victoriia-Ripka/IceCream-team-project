@@ -12,7 +12,7 @@
         padding-top: 120px;
         padding-bottom: 120px;
 
-        background-image:url('/images/desktop/contacts/contacts-bg.webp'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+        background-image:url('/images/desktop/contacts/contacts-bg.png'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 0 50%;
@@ -20,7 +20,7 @@
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx){
-                background-image: url('/images/desktop/contacts/contacts-bg-2x.webp'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+                background-image: url('/images/desktop/contacts/contacts-bg-2x.png'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
             }
     }
 }
