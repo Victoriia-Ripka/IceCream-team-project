@@ -4,6 +4,10 @@
     padding-bottom: 307px;
     position: relative;
     overflow: hidden;
+
+    @media screen and (min-width:1280px) {
+        padding-top: 421px;
+    }
 }
 
 .hero-wraper {
@@ -13,6 +17,11 @@
     @media screen and (min-width:768px) {
         left: 32px;
         top: 120px;
+    }
+
+    @media screen and (min-width:1280px) {
+        top: 188px;
+        left: 16px;
     }
 }
 
@@ -30,6 +39,11 @@
         font-size: 22px;
         line-height: 1.136;
     }
+
+    @media screen and (min-width:1280px) {
+        font-size: 38px;
+        line-height: 1.157;
+    }
 }
 
 .hero-title-color {
@@ -42,6 +56,11 @@
         font-size: 35px;
         line-height: 0.91;
     }
+
+    @media screen and(min-width:1280px) {
+        font-size: 59px;
+        line-height: 0.745;
+    }
 }
 
 .hero-list {
@@ -51,6 +70,10 @@
 
 .hero-item:not(:first-child) {
     margin-left: 8px;
+    
+    @media screen and (min-width:1280px) {
+        margin-left: 12px;
+    }
 }
 
 .hero-btn {
@@ -68,6 +91,12 @@
     &:hover {
         background-color: #C7133E;
     }
+
+    @media screen and (min-width:1280px) {
+        font-size: 14px;
+        line-height: 1.285;
+        padding: 11px 18px;
+    }
 }
 
 .hero-btn-last {
@@ -82,17 +111,24 @@
     position: absolute;
     right: 40px;
     top: 122px;
+    
     @media screen and (max-width:767px) {
        display: none; 
+    }
+
+    @media screen and (min-width:1280px) {
+        top: 190px;
+        right: 16px;
     }
 }
 
 .hero-item-time:not(:last-child) {
     margin-bottom: 17px;
-    
 }
 
 .hero-text-time {
+    position: relative;
+    z-index: 5;
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -101,17 +137,25 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--title-text);
-    
+
+    @media screen and (min-width:1280px) {
+        font-size: 46px;
+        line-height: 1.152;
+    }
 }
 
-.hero-text-time::after {
-    content: "";
+.number {
     position: absolute;
     right: 3%;
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: var(--white-text);
+
+    @media screen and (min-width:1280px) {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .hero-text {
@@ -122,6 +166,11 @@
     line-height: 1.25;
     color: var(--white-text);
     text-align: center;
+
+    @media screen and (min-width:1280px) {
+        font-size: 14px;
+        line-height: 1.286;
+    }
 }
 
 .hero-thumb {
@@ -158,6 +207,11 @@
         left: 50%;
         transform: translate(-50%, -50%); 
     }
+
+    @media screen and (min-width:1280px) {
+        width: 534px;
+        height: 534px;
+    }
 }
 
 .hero-thumb-milk {
@@ -167,6 +221,11 @@
 
     @media screen and (max-width:767px) {
         display: none;
+    }
+
+    @media screen and (min-width:1280px) {
+        left: 16px;
+        bottom: 60px;
     }
 }
 
@@ -182,14 +241,68 @@
     position: absolute;
     left: 147px;
     bottom: 67px;
+
+    @media screen and (min-width:1280px) {
+        font-size: 14px;
+        line-height: 1.428;
+        width: 200px;
+        left: 215px;
+        bottom: 75px;
+    }
 }
 
+.hero-btn-milk {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 146px;
+    bottom: 43px;
+
+    border: none;
+    background-color: var(--white-text);
+    background-image: url(/images/mobile/products/arrow-right.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    cursor: pointer;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(/images/mobile/products/arrow-right2x.png);
+    }
+
+    @media screen and (min-width:1280px) {
+        width: 26px;
+        height: 26px;
+        left: 214px;
+        bottom: 30px;
+    }
+}
+
+// .up {
+//     background-image: url(/images/mobile/products/arrow-up.png);
+
+//     @media (min-device-pixel-ratio: 2),
+//     (-webkit-min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//         background-image: url(/images/mobile/products/arrow-up2x.png);
+//     }
+// }
 .hero-thumb-girl {
     position: absolute;
-    right: 16px;
+    right: 32px;
     bottom: 1px;
 
     @media screen and (max-width:767px) {
         display: none;
+    }
+
+    @media screen and (min-width:1280px) {
+        right: 16px;
     }
 }

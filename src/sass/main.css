@@ -323,6 +323,27 @@ p {
   bottom: 67px;
 }
 
+.hero-btn-milk {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  left: 146px;
+  bottom: 43px;
+  border: none;
+  background-color: var(--white-text);
+  background-image: url(/images/mobile/products/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-btn-milk {
+    background-image: url(/images/mobile/products/arrow-right2x.png);
+  }
+}
+
 .hero-thumb-girl {
   position: absolute;
   right: 16px;
