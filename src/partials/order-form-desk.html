@@ -1,0 +1,85 @@
+<div data-modal_desk class="backdrop is-hidden">
+    <div class="order-form">
+        <button type="button"data-modal-close_desk class="order-form__close-btn">
+            <svg class="order-form__icon" width="16" height="16">
+                <use href="./images/svg/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="order-form__title">ORDER FORM</p>
+        <form class="order-form__form">
+            <div class="choise-products">
+                <p class="order-form-field__label"> Choose your product below</p>
+
+                <label class="order-check-field">
+                    <input type="checkbox" class="order-check-field__checkbox" name="checkbox">
+                    <span class="order-check-field__label"></span>
+                    <span class="order-check-field__text">
+                        ice cream</span>
+                </label>
+                <label class="order-check-field">
+                    <input type="checkbox" class="order-check-field__checkbox" name="checkbox">
+                    <span class="order-check-field__label"></span>
+                    <span class="order-check-field__text">
+                        ice coffee</span>
+                </label>
+                <label class="order-check-field">
+                    <input type="checkbox" class="order-check-field__checkbox" name="checkbox">
+                    <span class="order-check-field__label"></span>
+                    <span class="order-check-field__text">
+                        milkshakes</span>
+                </label>
+            </div>
+
+            <div class="order-form-field order-form-field__space--F">
+                <label class="order-form-field__label" for="user-name">Name</label>
+                <div class="order-form-position">
+                    <input class="order-form-position__input" type="text" name="user-name" id="user-name" placeholder=""
+                        required />
+                    <svg class="order-form-position__icon" width="18" height="18">
+                        <use href="./images/svg/sprite.svg#icon-user-order"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="order-form-field order-form-field__space--F">
+                <label class="order-form-field__label" for="user-tel">Phone</label>
+                <div class="order-form-position">
+                    <input class="order-form-position__input" type="tel" name="user-tel" id="user-tel" placeholder=""
+                        required>
+                    <svg class="order-form-position__icon" width="18" height="18">
+                        <use href="./images/svg/sprite.svg#icon-phone-order"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="order-form-field order-form-field__space--F">
+                <label class="order-form-field__label" for="user-email">E-mail</label>
+                <div class="order-form-position">
+                    <input class="order-form-position__input" type="email" name="user-email" id="user-email"
+                        placeholder="">
+                    <svg class="order-form-position__icon" width="18" height="18">
+                        <use href="./images/svg/sprite.svg#icon-email"></use>
+                    </svg>
+                </div>
+            </div>
+            <!--  -->
+            <div class="order-form-field order-form-field__space--F">
+                <label class="order-form-field__label" for="user-email">Address</label>
+                <div class="order-form-position">
+                    <input class="order-form-position__input" type="email" name="user-email" id="user-email"
+                        placeholder="">
+                    <svg class="order-form-position__icon" width="18" height="18">
+                        <use href="./images/svg/sprite.svg#icon-address-order"></use>
+                    </svg>
+                </div>
+            </div>
+            <!--  -->
+
+            <div class="order-form-field order-form-field__space--L">
+                <label class="order-form-field__label" for="comment">Your coments</label>
+                <textarea name="comment" id="comment" placeholder="Enter your text" class="order-textarea"></textarea>
+            </div>
+
+            <button type="submit" class="order-check-field__btn">Order</button>
+        </form>
+
+    </div>
+</div>
