@@ -14,7 +14,7 @@
     stroke: var(--white-text);
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -44,17 +44,17 @@
 
   transition: 0.5s;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $tablet) {
     width: 100vw;
     right: -768px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 254px;
     right: -254px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }
@@ -64,12 +64,12 @@
 }
 
 .mobile-menu__container {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     width: 480px;
     margin: 0 auto;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 254px;
   }
 }
@@ -102,7 +102,7 @@
     background-color: var(--hover-bg);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 186px;
     padding-right: 44px;
     padding-left: 44px;
