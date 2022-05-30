@@ -117,12 +117,8 @@
 }
 
 .sticky {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 6;
-}
-
-.sticky + .hero {
-  padding-top: 150px;
 }
