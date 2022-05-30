@@ -16,7 +16,7 @@
 }
 
 .footer__line{
-    border-bottom: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
 }
 
 .footer__titles{
@@ -138,7 +138,13 @@
 }
 
 .footer__tel{
-    color: var(--title-text);
+    color: var(--second-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--title-text);
+    }
+    
 }
 
 .footer__extra {
