@@ -3,5 +3,8 @@ var swiper = new Swiper('.mySwiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: {
+    delay: 4000,
+  },
   loop: true,
 });
