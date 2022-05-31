@@ -304,15 +304,15 @@
 
     cursor: pointer;
 
-    // &:hover {
-    //     border: inset;
-    //     border-color: var(--title-text);
-    // }
+    &:hover {
+        border: inset;
+        border-color: var(--title-text);
+    }
 
-    // &:focus {
-    //     border: inset;
-    //     border-color: var(--title-text);
-    // }
+    &:focus {
+        border: inset;
+        border-color: var(--title-text);
+    }
 
     @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
