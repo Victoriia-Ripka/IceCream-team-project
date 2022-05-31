@@ -37,16 +37,18 @@
 
 .section-products {
     background-color: #ffffff;
-    padding-top: 120px;
-    padding-bottom: 100px;
-
-    @media screen and (min-width: $tablet) {
-        padding-bottom: 110px;
-    }
-
-    @media screen and (min-width: $desktop) {
-        padding-bottom: 120px;
-    }
+    // padding-top: 80px;
+    // padding-bottom: 40px;
+    
+    // @media screen and (min-width: $tablet) {
+    //     padding-top: 40px;
+    //     padding-bottom: 60px;
+    // }
+    
+    // @media screen and (min-width: $desktop) {
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    // }
 }
 
 .section-products__text {
@@ -286,12 +288,6 @@
     @media screen and (min-width: $desktop) {
         margin-bottom: 60px;
         font-size: 16px;
-    }
-}
-
-.products__text--pink {
-    @media screen and (min-width: 1200px) and (max-width: 1280px) {
-        margin-bottom: 60px;
     }
 }
 

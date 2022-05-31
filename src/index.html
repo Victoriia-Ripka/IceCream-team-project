@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <title>IceCream</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,12 @@
     />
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
   </head>
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
@@ -39,6 +45,8 @@
     <include src="./partials/contacts.html"></include>
     <include src="./partials/footer.html"></include>
     <include src="./partials/order-form.html"></include>
+    <include src="./partials/modal-location.html"></include>
+    <include src="./partials/franchice.html"></include>
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
@@ -46,5 +54,11 @@
     <script src="./js/swiper.js"></script>
     <script src="./js/sticky.js"></script>
     <script src="./js/products__button.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal2.js"></script>
+    <script src="./js/readmore.js"></script>
+    <script src="./js/order-modal-mob.js"></script>
+    <script src="./js/order-modal-desk.js"></script>
   </body>
 </html>

@@ -1,42 +1,77 @@
 <header class="header" id="sticky-header">
   <div class="container header__container">
     <a href="./index.html" class="header__logo">
-      <img src="./images/mobile/logo/logo-test.png" alt="icecream" width="50" />
+      <picture>
+        <source
+          srcset="./images/mobile/logo/logo2x.png 2x"
+          media="(min-width: 1280px)"
+          type="image/png"
+        />
+        <img class="header__logo" src="./images/mobile/logo/logo.png" alt="icecream" width="50" />
+      </picture>
       <span class="header__logo-text">icecream</span>
     </a>
-
     <nav class="navigation">
       <ul class="site-nav">
         <li class="site-nav__item">
-          <a href="" class="site-nav__link site-nav__link--current">Home</a>
+          <a href="#home" class="site-nav__link site-nav__link--current"> Home</a>
         </li>
+        <li class="site-nav__item"><a href="#products" class="site-nav__link">Our products</a></li>
         <li class="site-nav__item">
-          <a href="" class="site-nav__link">About us</a>
+          <a href="#how-it-is-made" class="site-nav__link">How it’s made?</a>
         </li>
-        <li class="site-nav__item">
-          <a href="" class="site-nav__link">How it’s made?</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="" class="site-nav__link">Our products</a>
-        </li>
-        <li class="site-nav__item">
-          <a href="" class="site-nav__link">Contact</a>
-        </li>
+        <li class="site-nav__item"><a href="#about" class="site-nav__link">About us</a></li>
+        <li class="site-nav__item"><a href="#contacts" class="site-nav__link">Contact</a></li>
       </ul>
     </nav>
 
-    <a href="" class="mobile-menu">
-      <svg class="mobile-menu__icon" width="20px" height="12px">
-        <use class="" href="./images/svg/sprite.svg#icon-burger"></use>
-        >
+    <button class="menu-open-button" id="toggle" type="button">
+      <svg class="" id="toggle2" width="20px" height="12px">
+        <use
+          class="menu-open-button__icon"
+          id="toggle3"
+          href="./images/svg/sprite.svg#icon-burger"
+        ></use>
       </svg>
-    </a>
+    </button>
 
-    <button class="button header__button">
+    <div class="mobile-menu" id="sidebar">
+      <div class="mobile-menu__container">
+        <button class="menu-close-button" type="button" id="closemenu">
+          <svg class="" width="20px" height="12px">
+            <use class="menu-close-button__icon" href="./images/svg/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <button class="mobile-menu__button" data-modal-open3>
+          Buy now
+          <svg class="" width="20px" height="12px">
+            <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item">
+            <a href="#home" class="mobile-menu__link mobile-menu__link--current">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#products" class="mobile-menu__link">Our products</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#how-it-is-made" class="mobile-menu__link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#about" class="mobile-menu__link">About us</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#contacts" class="mobile-menu__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="button header__button" id="headerbutton" data-modal-open1>
       Buy now
       <svg class="" width="20px" height="12px">
         <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>
-        >
       </svg>
     </button>
   </div>
