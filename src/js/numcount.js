@@ -6,7 +6,7 @@ $(window).scroll(function () {
       topWindow = $(window).scrollTop();
     if (cPos < topWindow + 500) {
       if (cc < 2) {
-        $('.number').addClass('viz');
+        $('.number-adv').addClass('viz');
         $('div').each(function () {
           var i = 1,
             num = $(this).data('num'),
