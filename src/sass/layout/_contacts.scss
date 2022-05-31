@@ -236,6 +236,10 @@
     .button-icon {
             stroke: var(--white-text);
                 }
+    &:hover,
+    &:focus {
+               background-color: #C7133E;
+            }
 
     @media screen and (min-width: $tablet){
         padding-left: 32px;
