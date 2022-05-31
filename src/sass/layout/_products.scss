@@ -73,6 +73,7 @@
 .products {
     @media screen and (min-width: $tablet) {
         display: flex;
+        align-items: baseline;
         margin: -10px;
     }
 }
