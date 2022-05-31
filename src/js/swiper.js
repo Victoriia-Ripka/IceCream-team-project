@@ -7,4 +7,5 @@ var swiper = new Swiper('.mySwiper', {
     delay: 4000,
   },
   loop: true,
+  speed: 1000,
 });
