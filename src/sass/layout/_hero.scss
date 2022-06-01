@@ -1,7 +1,6 @@
 .hero {
     background-color: var(--second-bg);
     overflow: hidden;
-
     & .container {
         position: relative;
         height: 502px;
@@ -94,7 +93,6 @@
     padding: 8px 16px;
     border: transparent;
     transition: background-color 250ms;
-
     &:hover {
         background-color: #c7133e;
     }
@@ -109,7 +107,6 @@
 .hero-btn-last {
     background-color: var(--white-text);
     color: var(--title-text);
-
     &:hover {
         background-color: #ecebeb;
     }
@@ -193,7 +190,13 @@
     @media screen and (min-width:768px) {
         top: 63%;
         left: 45%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%); 
+    }
+    
+    @media screen and (min-width: 1280px) {
+        top: 63%;
+        left: 45%;
+        transform: translate(-50%, -50%); 
     }
 
     @media screen and (min-width: 1280px) {
@@ -210,11 +213,9 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--accent-color);
-
     top: 52%;
     left: 66%;
     transform: translate(-50%, -50%);
-
     @media screen and (min-width: 768px) {
         width: 335px;
         height: 333px;
@@ -284,9 +285,9 @@
     cursor: pointer;
 
     @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
         background-image: url(/images/mobile/products/arrow-right2x.png);
     }
 
@@ -313,7 +314,6 @@
     position: absolute;
     right: 32px;
     bottom: 1px;
-
     @media screen and (max-width: 767px) {
         display: none;
     }
