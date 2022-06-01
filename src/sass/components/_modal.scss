@@ -17,23 +17,77 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 95vw;
-  min-height: 550px;
+  max-height: 600px;
   border-radius: 4px;
   padding: 35px;
-  @media screen and (orientation: portrait) {
-    width: 95vw;
-  }
-  @media screen and (orientation: landscape) {
-    overflow: auto;
-    width: 95vw;
-    // height: 100%;
-  }
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
     url(/images/desktop/order-form-bg-desktop.jpg);
   background-position: center;
   background-size: inherit;
+
+  @media screen and (orientation: portrait) {
+    width: 95vw;
+    overflow: auto;
+    height: 100%;
+  }
+  @media screen and (orientation: landscape) {
+    overflow: auto;
+    width: 95vw;
+    height: 100%;
+  }
+
   @media screen and(min-width:320px) and (min-width: 480px) {
     width: 450px;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+        url(/images/mobile/order-form/order-form-bg-mob-X1.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+        url(/images/mobile/order-form/order-form-bg-mob-X2.jpg);
+    }
+  }
+  @media screen and(min-width:768px) and (min-width: 1280px) {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+        url(/images/desktop/order-form/order-form-bg1280-desk-X1.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+        url(/images/desktop/order-form/order-form-bg1280-desk-X2.jpg);
+    }
+  }
+}
+.modal-location {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95vw;
+  max-height: 550px;
+  border-radius: 4px;
+  padding: 35px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
+    url(/images/desktop/order-form-bg-desktop.jpg);
+  background-position: center;
+  background-size: inherit;
+
+  @media screen and (orientation: portrait) {
+    width: 95vw;
+    overflow: auto;
+    height: 100%;
+  }
+  @media screen and (orientation: landscape) {
+    overflow: auto;
+    width: 95vw;
+    height: 100%;
+  }
+
+  @media screen and(min-width:320px) and (min-width: 480px) {
+    width: 450px;
+
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
         url(/images/mobile/order-form/order-form-bg-mob-X1.jpg);
@@ -55,12 +109,12 @@
   }
 }
 
-.modal__form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// .modal__form {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 .modal__nav {
   display: flex;
   flex-direction: column;
