@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 2;
     top: 194px;
-
+   
     @media screen and (min-width: 768px) {
         top: 102px;
         left: 32px;
@@ -212,7 +212,7 @@
     top: 52%;
     left: 66%;
     transform: translate(-50%, -50%);
-    
+
     @media screen and (min-width: 768px) {
         width: 335px;
         height: 333px;
@@ -227,6 +227,8 @@
         top: 48%;
         left: 61%;
         transform: translate(-50%, -50%);
+
+       
     }
 }
 
