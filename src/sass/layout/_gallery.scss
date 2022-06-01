@@ -1,14 +1,14 @@
 .gallery {
   // padding-top: 40px;
   padding-bottom: 0;
-  background-image: linear-gradient(#fff5f6 42%, #ffffff 42%);
+  background-image: linear-gradient(#fff5f6 56%, #ffffff 56%);
 
-  @media screen and(min-width: 768px) {
-    background-image: linear-gradient(#fff5f6 41%, #ffffff 41%);
+  @media screen and(min-width: $tablet) {
+    background-image: linear-gradient(#fff5f6 53.5%, #ffffff 53.5%);
   }
 
-  @media screen and(min-width: 1280px) {
-    background-image: linear-gradient(#fff5f6 40%, #ffffff 40%);
+  @media screen and(min-width: $desktop) {
+    background-image: linear-gradient(#fff5f6 49%, #ffffff 49%);
   }
 }
 
@@ -19,7 +19,7 @@
   flex-wrap: wrap;
   margin: -1px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     margin-right: auto;
     margin-left: auto;
     margin: -2px;
@@ -30,11 +30,11 @@
   border-radius: 10px;
   overflow: hidden;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     border-radius: 15px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     border-radius: 25px;
   }
 }
@@ -54,13 +54,13 @@
   margin-left: 1px;
   margin-right: 1px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     flex-basis: calc((100% - 7 * 4px) / 7);
     margin-left: 2px;
     margin-right: 2px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     flex-basis: calc((100% - 7 * 8px) / 7);
     margin-left: 4px;
     margin-right: 4px;
@@ -69,11 +69,11 @@
 .gallery__column.big-img {
   flex-basis: calc((100% - 7 * 2px) / 7 * 2);
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     flex-basis: calc((100% - 7 * 4px) / 7 * 2);
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     flex-basis: calc((100% - 7 * 8px) / 7 * 2);
   }
 }
@@ -82,11 +82,11 @@
   position: relative;
   bottom: 7px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     bottom: 7px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     bottom: 7px;
   }
 }
@@ -95,11 +95,11 @@
   position: relative;
   top: 1px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     top: 5px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     top: 15px;
   }
 }
@@ -108,11 +108,11 @@
   position: relative;
   top: 11px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     top: 19px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     top: 29px;
   }
 }
@@ -121,11 +121,11 @@
   position: relative;
   bottom: 8px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     bottom: 15px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     bottom: 27px;
   }
 }
@@ -134,11 +134,11 @@
   position: relative;
   top: 1px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     top: 6px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     top: 8px;
   }
 }
@@ -148,11 +148,11 @@
   align-items: flex-start;
   margin-bottom: 2px;
 
-  @media screen and(min-width: 768px) {
+  @media screen and(min-width: $tablet) {
     margin-bottom: 4px;
   }
 
-  @media screen and(min-width: 1280px) {
+  @media screen and(min-width: $desktop) {
     margin-bottom: 8px;
   }
 
