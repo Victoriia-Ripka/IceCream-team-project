@@ -1,15 +1,8 @@
 <header class="header" id="sticky-header">
   <div class="container header__container">
     <a href="./index.html" class="header__logo">
-      <picture>
-        <source
-          srcset="./images/mobile/logo/logo2x.png 2x"
-          media="(min-width: 1280px)"
-          type="image/png"
-        />
-        <img class="header__logo" src="./images/mobile/logo/logo.png" alt="icecream" width="50" />
-      </picture>
-      <span class="header__logo-text">icecream</span>
+      <img class="header__img" src="./images/svg/logo.svg" alt="icecream" /> 
+      icecream
     </a>
     <nav class="navigation">
       <ul class="site-nav">
@@ -26,7 +19,7 @@
     </nav>
 
     <button class="menu-open-button" id="toggle" type="button">
-      <svg class="" id="toggle2" width="20px" height="12px">
+      <svg id="toggle2" width="20px" height="12px">
         <use
           class="menu-open-button__icon"
           id="toggle3"
@@ -42,7 +35,7 @@
             <use class="menu-close-button__icon" href="./images/svg/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <button class="mobile-menu__button" data-modal-open3>
+        <button class="mobile-menu__button" data-modal-open_mob>
           Buy now
           <svg class="" width="20px" height="12px">
             <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>
@@ -68,7 +61,7 @@
         </ul>
       </div>
     </div>
-    <button class="button header__button" id="headerbutton" data-modal-open1>
+    <button class="button header__button" id="headerbutton" data-modal-open_desk>
       Buy now
       <svg class="" width="20px" height="12px">
         <use class="button-arrow" href="./images/svg/sprite.svg#icon-arrow"></use>
