@@ -299,16 +299,16 @@
     }
 }
 
-// .up {
-//   background-image: url(/images/mobile/products/arrow-up.png);
+.up {
+  background-image: url(/images/mobile/products/arrow-up.png);
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(/images/mobile/products/arrow-up2x.png);
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/mobile/products/arrow-up2x.png);
+  }
+}
 
 .hero-thumb-girl {
     position: absolute;
