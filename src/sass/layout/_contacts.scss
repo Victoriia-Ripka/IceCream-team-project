@@ -2,14 +2,14 @@
     background-image: linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
 
     // padding-top: 48px;
-    // padding-bottom: 48px;
+    padding-bottom: 48px;
 
     @media screen and (min-width: $tablet){
-        padding-top: 80px;
+        // padding-top: 80px;
         padding-bottom: 40px;
     }
     @media screen and (min-width: $desktop){
-        padding-top: 120px;
+        // padding-top: 120px;
         padding-bottom: 120px;
 
         background-image:url('/images/desktop/contacts/contacts-bg.png'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
