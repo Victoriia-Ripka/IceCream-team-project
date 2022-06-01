@@ -4,9 +4,11 @@
   top: 0;
   position: absolute;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 350ms, visibility 350ms;
-  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition-duration: 300ms;
+  transition-property: opacity, visibility;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
 }
 .modal {
   background-color: #fff;
@@ -18,6 +20,14 @@
   min-height: 550px;
   border-radius: 4px;
   padding: 35px;
+  @media screen and (orientation: portrait) {
+    width: 95vw;
+  }
+  @media screen and (orientation: landscape) {
+    overflow: auto;
+    width: 95vw;
+    // height: 100%;
+  }
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.5)),
     url(/images/desktop/order-form-bg-desktop.jpg);
   background-position: center;
@@ -102,7 +112,11 @@
   font-size: 20px;
   line-height: 1.13;
   letter-spacing: 0.04em;
+  transition-property: color;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .input__text:hover,
 :focus {
   color: var(--title-text);
@@ -127,6 +141,9 @@
 :focus {
   color: var(--title-text);
   background-color: transparent;
+  transition-duration: 0.3s;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 // .icon-close {
 //   fill: #000;
@@ -200,13 +217,20 @@
   cursor: pointer;
   padding-left: 38px;
   margin-top: 4px;
+  transition-duration: 0.3s;
+  transition-property: fill, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 // .form__input:hover,
 // :focus {
 //   border-color: var(--title-text);
 // }
 .form__input:hover {
   border-color: var(--title-text);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form__input:focus {
   border-color: var(--title-text);
@@ -233,7 +257,11 @@
   position: absolute;
   top: 50%;
   left: 10px;
+  transition-duration: 0.3s;
+  transition-property: fill, border-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-coment {
   display: block;
   width: 100%;
