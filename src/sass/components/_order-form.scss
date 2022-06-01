@@ -22,7 +22,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    width: 95%;
     max-width: 450px;
     max-height: 660px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/order-form/order-form-bg-mob-X1.jpg");
@@ -33,6 +33,14 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 4px;
     padding: 40px;
+    @media screen and (orientation:portrait){
+        width: 100%;
+    }
+    @media screen and (orientation:landscape) {
+        overflow: auto;
+        width: 95vw;
+        height: 100%;
+    }
     
     @media screen and (min-width: 480px) {
     
