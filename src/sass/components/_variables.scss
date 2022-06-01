@@ -1,13 +1,21 @@
 :root {
-    --main-text: #000000;
-    --second-text: #907e82;
-    --white-text: #ffffff;
-    --title-text: #d41443;
-    --accent-color: #ffa5ba;
-    --main-bg: #fff5f6;
-    --second-bg: #ffb8ca;
+  --main-text: #000000;
+  --second-text: #907e82;
+  --white-text: #ffffff;
+  --title-text: #d41443;
+  --accent-color: #ffa5ba;
+  --main-bg: #fff5f6;
+  --second-bg: #ffb8ca;
+  --border-color: #e1e1e1;
+  --hover-bg: #ecebeb;
+  --mob-menu-bg: #e17992;
+  --mob-menu-decoration: #e18298;
 }
 
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1280px;
+
+$pre-mobile: 479px;
+$pre-tablet: 767px;
+$pre-desktop: 1279px;
