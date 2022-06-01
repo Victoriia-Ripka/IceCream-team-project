@@ -4,17 +4,17 @@
   top: 0;
   width: 100%;
   z-index: 6;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 11px;
+    padding-bottom: 11px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 .header__container {
@@ -46,7 +46,11 @@
 }
 
 .header__img {
+  width: 30px;
   margin-right: 18px;
+  @media screen and (min-width: $tablet){
+    width: 40px;
+  }
 }
 
 .header__button {
