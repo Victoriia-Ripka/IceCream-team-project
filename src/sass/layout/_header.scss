@@ -1,5 +1,5 @@
 .header {
-  background-color: var(--second-bg);
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -48,7 +48,7 @@
 .header__img {
   width: 30px;
   margin-right: 18px;
-  @media screen and (min-width: $tablet){
+  @media screen and (min-width: $tablet) {
     width: 40px;
   }
 }
