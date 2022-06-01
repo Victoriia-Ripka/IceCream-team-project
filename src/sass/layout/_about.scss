@@ -1,0 +1,295 @@
+
+
+// .about__section {
+//     @media screen and (min-width: 320px) {
+//             padding-top: 40px;
+//             padding-bottom: 40px;
+//         }
+//     @media screen and (min-width: 768px) {
+//         padding-top: 20px;
+//         padding-bottom: 80px;
+//     }
+//         @media screen and (min-width: 1280px) {
+//             padding-top: 60px;
+//             padding-bottom: 40px;
+//         }
+// } 
+
+.about__milk {
+    
+    background: url(/images/mobile/about/1milk.png) no-repeat 0 575px,
+            url(/images/mobile/about/2milk.png) no-repeat 100% 575px;
+            
+    
+        // @media screen and (min-width: 400px) {
+        //     background: url(/images/mobile/about/1milk.png) no-repeat 0 695px,
+        //         url(/images/mobile/about/2milk.png) no-repeat 100% 695px;
+        // }
+                @media screen and (max-width: 768px) {
+                    background-size: 50%;
+                }
+        @media screen and (min-width: 768px) {
+            background: none;
+        }
+        @media screen and (min-width: 1280px) {
+            background: none;
+            background: url(/images/desktop/about/1milk.png) no-repeat 0 250px,
+                    url(/images/desktop/about/2milk.png) no-repeat 100% 230px;
+        }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background: url(/images/mobile/about/1milk2x.png) no-repeat 0 575px,
+                url(/images/mobile/about/2milk2x.png) no-repeat 100% 575px;
+                background-size: 160px;
+    
+            // @media screen and (min-width: 400px) {
+            //     background: url(/images/mobile/about/1milk2x.png) no-repeat 0 695px,
+            //         url(/images/mobile/about/2milk2x.png) no-repeat 100% 695px;
+            //         background-size: 160px;
+            // }
+                        @media screen and (max-width: 768px) {
+                            background-size: 50%;
+                        }
+                        @media screen and (min-width: 768px) {
+                            background: none;
+                        
+                        }
+                @media screen and (min-width: 1280px) {
+                    background: none;
+                    background: url(/images/desktop/about/1milk2x.png) no-repeat 0 250px,
+                        url(/images/desktop/about/2milk2x.png) no-repeat 100% 230px;
+                        background-size: 639px;
+                }
+        }
+}
+
+.about {
+    background-color: var(--main-bg);
+    position: relative;
+}
+
+.about__main {
+    
+}
+
+.about__container {
+    @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: space-between;
+        }
+        @media screen and (min-width: 1280px) {
+            display: flex;
+            justify-content: flex-start;
+        }
+}
+
+.about__cow {
+    @media screen and (min-width: 768px) {
+            width: 336px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 501px;
+            margin-right: 139px;
+        }
+}
+
+.about__img {
+    width: 100%;
+    margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+            width: 336px;
+            max-width: none;
+            margin-bottom: 0;
+        }
+                @media screen and (min-width: 1280px) {
+                    width: 100%;
+                    max-width: none;
+                    margin-bottom: 0;
+                }
+}
+
+.about__text {
+        width: 100%;
+        font-family: 'Titan One';
+        font-size: 18px;
+        line-height: 1.17;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+        @media screen and (min-width: 768px) {
+                font-size: 26px;
+                line-height: 1.15;
+            }
+@media screen and (min-width: 1280px) {
+        font-size: 30px;
+        line-height: 1.13;
+}
+                        
+}
+
+.about__title {
+        width: 100%;
+        font-family: 'Titan One';
+        font-size: 34px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: var(--title-text);
+        margin-bottom: 32px;
+        @media screen and (min-width: 768px) {
+                        font-size: 48px;
+                        margin-bottom: 40px;
+                    }
+                                        @media screen and (min-width: 1280px) {
+                                            font-size: 58px;
+                                            line-height: 1.14;
+                                            margin-bottom: 60px;
+                                        }
+}
+
+
+.about__wrap {
+    width: 79%;
+    // background-image: url(/images/mobile/about/1milk.png), url(/images/mobile/about/2milk.png);
+    // background-repeat: no-repeat;
+    // background-position: left 0 top 50px;
+    
+
+        @media screen and (min-width: 321px) {
+                // width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+        }
+        @media screen and (min-width: 768px) {
+            width: 336px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 463px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 72px;
+        }
+}
+
+
+
+
+.about__item-text {
+        margin-bottom: 20px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 1.76;
+                margin-bottom: 25px;
+            }
+        @media screen and (min-width: 1280px) {
+            font-size: 16px;
+            line-height: 1.76;
+            margin-bottom: 32px;
+        }
+}
+
+.about__item-text--pink {
+    color: var(--second-text);
+    @media screen and (min-width: 1280px) {
+            font-size: 14px;
+                line-height: 1.94;
+        }
+}
+
+.about__item-text--last {
+    @media screen and (min-width: 768px) {
+            margin-bottom: 40px;
+        }
+}
+
+.about__btn {
+    max-width: 176px;
+    max-height: 44px;
+    border-radius: 22px;
+    background-color: #ffffff;
+    border: transparent;
+    color: var(--title-text);
+    font-weight: 700;
+    padding: 15px 15px;
+        font-size: 14px;
+        line-height: 1.3;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        &:hover, &:focus {
+            background-color: #ECEBEB;
+        }
+    @media screen and (min-width: 321px) {
+        width: 176px;
+        height: 44px;
+        padding: 0;
+        // margin-right: auto;
+        // margin-left: auto;
+    }
+}
+
+.about__icon {
+    fill: transparent;
+    margin-left: 15px;
+}
+
+@media screen and (min-width: 321px) {
+    .about__enter {
+        display: none;
+    }
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+.readmore {
+    background-color: transparent;
+    position: relative;
+    top: -44px;
+    left: 0;
+    margin-bottom: -44px;
+    z-index: 5;
+    @media screen and (min-width: 768px) {
+        margin-top: -15px;
+    }
+}
+
+.readmore__text {
+    font-weight: 500;
+        font-size: 12px;
+        line-height: 1.62;
+        color: var(--second-text);
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+                font-size: 14px;
+                line-height: 1.76;
+            }
+        @media screen and (min-width: 1280px) {
+            font-size: 14px;
+            line-height: 1.94;
+        }
+}
+
+.about__icon--rote {
+    transform: rotate(-90deg);
+}
+
+.button-hidden {
+    background-color: var(--main-bg);
+    width: 180px;
+    height: 100px;
+    position: absolute;
+    z-index: -5;
+}

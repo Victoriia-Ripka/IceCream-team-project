@@ -2,16 +2,16 @@
     background-color: var(--second-bg);
     overflow: hidden;
     & .container {
-      position: relative;
-      height: 502px;
-      
-      @media screen and (min-width:768px) {
-        height: 416px;
-      }
-      
-      @media screen and (min-width:1280px) {
-        height: 664px;
-      }
+        position: relative;
+        height: 502px;
+
+        @media screen and (min-width:768px) {
+            height: 416px;
+        }
+
+        @media screen and (min-width:1280px) {
+            height: 664px;
+        }
     }
 }
 
@@ -32,7 +32,6 @@
 }
 
 .hero-title {
-    font-family: 'Titan One';
     font-style: normal;
     color: var(--white-text);
     font-weight: 400;
@@ -90,7 +89,6 @@
     color: var(--white-text);
     background-color: var(--title-text);
     border-radius: 20px;
-
     padding: 8px 16px;
     border: transparent;
     transition: background-color 250ms;
@@ -199,6 +197,12 @@
         left: 45%;
         transform: translate(-50%, -50%); 
     }
+
+    @media screen and (min-width: 1280px) {
+        top: 63%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 .wraper {
@@ -208,17 +212,16 @@
     height: 344px;
     border-radius: 50%;
     background-color: var(--accent-color);
-
     top: 52%;
     left: 66%;
     transform: translate(-50%, -50%);
-
+    
     @media screen and (min-width: 768px) {
         width: 335px;
         height: 333px;
         top: 49%;
         left: 54%;
-        transform: translate(-50%, -50%); 
+        transform: translate(-50%, -50%);
     }
 
     @media screen and (min-width: 1280px) {
@@ -247,25 +250,25 @@
     }
 }
 
-.hero-text-milc {
-    font-family: 'DM Sans';
+.text-milc-wrap {
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: var(--white-text);
     width: 114px;
-
+    
     position: absolute;
     left: 148px;
     bottom: 67px;
-
+    overflow-y: scroll;
+    
     @media screen and (min-width: 1280px) {
         font-size: 14px;
         line-height: 1.428;
         width: 200px;
         left: 213px;
-        bottom: 72px;
+        bottom: 69px;
     }
 }
 
@@ -273,17 +276,14 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-
     position: absolute;
     left: 146px;
     bottom: 43px;
-
     border: none;
     background-color: var(--white-text);
     background-image: url(/images/mobile/products/arrow-right.png);
     background-repeat: no-repeat;
     background-size: contain;
-
     cursor: pointer;
 
     @media (min-device-pixel-ratio: 2),
@@ -301,22 +301,21 @@
     }
 }
 
-// .up {
-//   background-image: url(/images/mobile/products/arrow-up.png);
+.back {
+  background-image: url(/images/mobile/products/arrow-up.png);
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(/images/mobile/products/arrow-up2x.png);
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/mobile/products/arrow-up2x.png);
+  }
+}
 
 .hero-thumb-girl {
     position: absolute;
     right: 32px;
-    bottom: 1px;
-
+    bottom: -1px;
     @media screen and (max-width: 767px) {
         display: none;
     }

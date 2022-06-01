@@ -1,0 +1,278 @@
+.contacts{ 
+    background-image: linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+
+    // padding-top: 48px;
+    padding-bottom: 48px;
+
+    @media screen and (min-width: $tablet){
+        // padding-top: 80px;
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop){
+        // padding-top: 120px;
+        padding-bottom: 120px;
+
+        background-image:url('/images/desktop/contacts/contacts-bg.png'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 0 50%;
+        
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx){
+                background-image: url('/images/desktop/contacts/contacts-bg-2x.png'), linear-gradient(to top, var(--main-bg) 75%, var(--white-text) 25%);
+            }
+    }
+}
+.contacts-list{
+    margin-bottom: 32px;   
+
+    @media screen and (min-width: $tablet) {
+        display: flex;       
+        margin-left: -32px;
+
+        margin-bottom: 40px;
+        }
+
+    @media screen and (min-width: $desktop){
+        margin-bottom: 60px;
+    }
+}
+.contacts-item{
+    padding: 40px 32px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    
+
+    background-color:var(--white-text);
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @media screen and (max-width:$pre-tablet){
+        &:not(:first-child) {
+                margin-top: 20px;
+            }
+    }
+
+    @media screen and (min-width: $tablet){
+        flex-basis: calc(100% / 3 - 32px);    
+        margin-left: 32px;
+        font-size: 14px;
+    }
+
+     @media screen and (min-width: $desktop){
+             padding: 40px 40px;
+
+        font-size: 16px;
+
+        
+     }     
+}
+.contacts-type{
+    display: inline-flex;
+    height: 16px;
+    align-items: center;
+    justify-content: center;    
+    
+    text-transform: uppercase;
+    color: var(--white-text);
+    border-radius: 4px;
+
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet){
+        height: 28px;        
+
+        font-size: 16px;
+        border-radius: 6px;
+
+        margin-bottom: 32px;
+    }
+    &.cafe{
+        width: 80px;
+        background-color: #F0D1A5;
+
+        @media screen and (min-width: $tablet){
+            width: 75px;
+        }
+    }
+    &.foodtruck{
+        width: 130px;
+        background-color: #C2E297;
+
+        @media screen and (min-width: $tablet){
+            width: 138px;
+        }
+    }
+}
+.contacts-title{
+    font-weight: 500;
+    font-size: 12px;
+    line-height:1.86;    
+    letter-spacing: 0.04em;
+    
+    color: var(--main-text);
+
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $tablet){
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: $desktop){
+        font-size: 16px;        
+        margin-bottom: 8px;
+    }
+}
+.contacts-text{
+    line-height: 1.5;
+    color: var(--second-text);
+
+    @media screen and (min-width: $tablet){
+        line-height: 1.66;
+    }
+
+    @media screen and (min-width: $desktop){
+        line-height: 1.83;
+    }
+}
+.schedule-list{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+
+    @media screen and (min-width: $tablet){
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+}
+.schedule-item{
+    &+&{
+        margin-top: 8px;
+
+        @media screen and (min-width: $tablet){
+            margin-top: 12px;
+        }
+    }
+    
+}
+.schedule-time{
+    color: var(--accent-color);
+}
+.contacts-link{
+    line-height: 1.5;
+
+    color: var(--second-text);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:visited{
+        color: var(--second-text);
+    }
+    &:hover, &:focus{
+        color: var(--title-text);
+    }
+    @media screen and (min-width: $tablet){
+        line-height: 1.83;
+    }
+}
+.contacts-button-list{
+    text-align: center;
+    @media screen and (min-width: $tablet){
+        display: flex;
+        justify-content: center;
+    }
+   
+}
+.contacts-button-item{
+    display: block;
+
+        &+& {
+        @media screen and (max-width:$pre-tablet){
+            margin-top: 10px;
+        }
+        @media screen and (min-width: $tablet){
+            margin-left: 15px;
+        }
+                
+            }
+    }   
+
+.contacts-button{    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    
+   
+    cursor: pointer;
+        
+    border-radius: 22px;
+    border: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+.button-icon{
+   margin-left: 8px;
+
+    @media screen and (min-width: $tablet){
+        margin-left: 13px;
+    }
+}
+.button-active{
+    background-color: #D41342;
+    color: var(--white-text);
+   
+    padding-left: 17px;
+    padding-right: 17px;
+    
+    .button-icon {
+            stroke: var(--white-text);
+                }
+    &:hover,
+    &:focus {
+               background-color: #C7133E;
+            }
+
+    @media screen and (min-width: $tablet){
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+}
+.button-reverse{
+    background-color:var(--white-text);
+    color: var(--title-text);
+
+    padding-left: 32px;
+    padding-right: 32px;
+
+    .button-icon {
+            stroke: var(--title-text);
+        }
+    &:hover, &:focus{
+        background-color: #ECEBEB;
+    }
+     @media screen and (min-width: $tablet) {
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+     @media screen and (min-width: $desktop) {
+        padding-left: 39px;
+        padding-right: 39px;
+    }
+}
