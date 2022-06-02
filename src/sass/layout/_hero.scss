@@ -19,7 +19,7 @@
     position: absolute;
     z-index: 2;
     top: 194px;
-
+   
     @media screen and (min-width: 768px) {
         top: 102px;
         left: 32px;
@@ -32,7 +32,6 @@
 }
 
 .hero-title {
-    font-family: 'Titan One';
     font-style: normal;
     color: var(--white-text);
     font-weight: 400;
@@ -216,6 +215,7 @@
     top: 52%;
     left: 66%;
     transform: translate(-50%, -50%);
+    
     @media screen and (min-width: 768px) {
         width: 335px;
         height: 333px;
@@ -230,6 +230,8 @@
         top: 48%;
         left: 61%;
         transform: translate(-50%, -50%);
+
+       
     }
 }
 
@@ -248,25 +250,25 @@
     }
 }
 
-.hero-text-milc {
-    font-family: 'DM Sans';
+.text-milc-wrap {
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: var(--white-text);
     width: 114px;
-
+    
     position: absolute;
     left: 148px;
     bottom: 67px;
-
+    overflow-y: scroll;
+    
     @media screen and (min-width: 1280px) {
         font-size: 14px;
         line-height: 1.428;
         width: 200px;
         left: 213px;
-        bottom: 72px;
+        bottom: 69px;
     }
 }
 
@@ -299,21 +301,21 @@
     }
 }
 
-// .up {
-//   background-image: url(/images/mobile/products/arrow-up.png);
+.back {
+  background-image: url(/images/mobile/products/arrow-up.png);
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     background-image: url(/images/mobile/products/arrow-up2x.png);
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/mobile/products/arrow-up2x.png);
+  }
+}
 
 .hero-thumb-girl {
     position: absolute;
     right: 32px;
-    bottom: 1px;
+    bottom: -1px;
     @media screen and (max-width: 767px) {
         display: none;
     }
