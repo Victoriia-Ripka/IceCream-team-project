@@ -62,7 +62,7 @@
     margin-bottom: 145px;
 
     @media screen and (min-width: $tablet) {
-        margin-bottom: 155px;
+        margin-bottom: 115px;
     }
 
     @media screen and (min-width: $desktop) {
@@ -140,27 +140,27 @@
 
 .products__title::before {
     position: absolute;
-    top: -110px;
+    top: -130px;
     left: 50%;
     transform: translateX(-50%);
 
     display: block;
     content: '';
-    width: 249px;
-    height: 252px;
+    width: 280px;
+    height: 280px;
     background-size: contain;
     background-repeat: no-repeat;
 
     @media screen and (min-width: $tablet) {
-        top: -105px;
-        width: 220px;
-        height: 226px;
+        top: -110px;
+        width: 224px;
+        height: 224px;
     }
 
     @media screen and (min-width: $desktop) {
-        top: -200px;
-        width: 335px;
-        height: 335px;
+        top: -255px;
+        width: 394px;
+        height: 394px;
     }
 }
 
