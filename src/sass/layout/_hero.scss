@@ -215,6 +215,15 @@
     top: 52%;
     left: 66%;
     transform: translate(-50%, -50%);
+    animation: pink-circle 2s;
+    @keyframes pink-circle {
+        0% {
+            left: -45%;
+        }
+        100% {
+            left: 66%;
+        }
+    }
     
     @media screen and (min-width: 768px) {
         width: 335px;
@@ -222,6 +231,14 @@
         top: 49%;
         left: 54%;
         transform: translate(-50%, -50%);
+        @keyframes pink-circle {
+            0% {
+                left: -40%;
+            }
+            100% {
+                left: 54%;
+            }
+        }
     }
 
     @media screen and (min-width: 1280px) {
@@ -230,8 +247,14 @@
         top: 48%;
         left: 61%;
         transform: translate(-50%, -50%);
-
-       
+        @keyframes pink-circle {
+            0% {
+                left: -50%;
+            }
+            100% {
+                left: 61%;
+            }
+        }
     }
 }
 
@@ -239,7 +262,16 @@
     position: absolute;
     top: 246px;
     left: 32px;
-
+    animation: jug-of-milk 2s;
+    @keyframes jug-of-milk {
+        0% {
+            left: -40%;
+        }
+        100% {
+            left: 4.2%;
+        }
+    }
+    
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -247,6 +279,14 @@
     @media screen and (min-width: 1280px) {
         top: 388px;
         left: 16px;
+        @keyframes jug-of-milk {
+            0% {
+                left: -40%;
+            }
+            100% {
+                left: 1.2%;
+            }
+        }
     }
 }
 
@@ -261,7 +301,6 @@
     position: absolute;
     left: 148px;
     bottom: 67px;
-    //overflow-y: scroll;
     
     @media screen and (min-width: 1280px) {
         font-size: 14px;
@@ -316,11 +355,28 @@
     position: absolute;
     right: 32px;
     bottom: -1px;
+    animation: ice-cream-girl 2s;
+    @keyframes ice-cream-girl {
+        0% {
+            right: -40%;
+        }
+        100% {
+            right: 4.2%;
+        }
+    }
     @media screen and (max-width: 767px) {
         display: none;
     }
 
     @media screen and (min-width: 1280px) {
         right: 16px;
+        @keyframes ice-cream-girl {
+            0% {
+                right: -40%;
+            }
+            100% {
+                right: 1.2%;
+            }
+        }
     }
 }
